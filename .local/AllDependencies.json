@@ -21729,15 +21729,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aci-con2\\.nuget\\packages\\": {}
+    "C:\\Users\\aci-cns\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "AMP_R3_RT_MAP",
       "projectName": "AMP_R3_RT_MAP",
-      "projectPath": "C:\\Users\\aci-con2\\Documents\\UiPath\\AMP_R3_RT_MAP\\.local",
-      "packagesPath": "C:\\Users\\aci-con2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aci-con2\\Documents\\UiPath\\AMP_R3_RT_MAP\\.local",
+      "projectPath": "C:\\Users\\aci-cns\\Documents\\UiPath\\.local",
+      "packagesPath": "C:\\Users\\aci-cns\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aci-cns\\Documents\\UiPath\\.local",
       "UsingMicrosoftNETSdk": false,
       "restoreAuditProperties": {
         "enableAudit": "False"
@@ -21767,7 +21767,7 @@
             "version": "[25.10.19, 25.10.19]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\aci-con2\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPathPlatform\\Studio\\26.0.187-cloud.22164\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
