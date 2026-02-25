@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Click - si button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "3eLWGa9KI0i6R-0bR_ebVQ",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/3eLWGa9KI0i6R-0bR_ebVQ",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/jtvubggeGU6_3VdSoBEG8Q",
+  "Created": "2026-02-02T03:52:48.6548777Z",
+  "Updated": "2026-02-02T03:53:55.2738497Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

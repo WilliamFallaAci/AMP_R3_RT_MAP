@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Datos Ejecución RX",
+  "Type": "Screen",
+  "Id": "mJi_u3L77EegnZZB7AFzhA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/mJi_u3L77EegnZZB7AFzhA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/5hnmp6dkmkKTQKc84lBH7w",
+  "Created": "2026-01-31T02:24:17.7054944Z",
+  "Updated": "2026-01-31T02:25:19.1382085Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

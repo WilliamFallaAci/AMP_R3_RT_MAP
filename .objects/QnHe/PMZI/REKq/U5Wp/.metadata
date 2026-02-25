@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Check App State - clave acceso nueva",
+  "Type": "Element",
+  "Id": "U5Wpex69aEKItXGhTzc2_g",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/U5Wpex69aEKItXGhTzc2_g",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "Created": "2026-01-29T15:57:37.0991286Z",
+  "Updated": "2026-01-29T15:57:37.0991286Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

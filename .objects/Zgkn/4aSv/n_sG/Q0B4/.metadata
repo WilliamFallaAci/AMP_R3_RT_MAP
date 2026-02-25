@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into - pedido PV ampo",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Q0B4_oG08UCMTW5pSkWHGw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/Q0B4_oG08UCMTW5pSkWHGw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T00:56:25.4823374Z",
+  "Updated": "2026-02-02T00:56:25.4823374Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IXQiKJpSRkCYsdGqpRoKUA" Reference="vPy7nYopc0-jm1pCYXfcew/L8NiVJnqlU612Ui5PQnRPQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="b9186c4c-775a-42d0-af43-d164a5c348ed" DesignTimeRectangle="1328, 889, 542, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Selecciona una opción' aria-role='combobox' tag='SPAN' class='ms-Dropdown-title is-placeholder' parentclass='od-TextField' parentid='appRoot' role='element' check:innerText='Selecciona una opción' /&gt;" Guid="0ffd6e54-d517-47ba-849d-ec7244f1534e" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="b9186c4c-775a-42d0-af43-d164a5c348ed" CvTextArea="1327, 868, 108, 16" CvTextArgument="Comp_type_desc" CvType="Text" DesignTimeRectangle="1328, 860, 542, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' class='od-FieldEditor-fieldTitle ms-Label' visibleinnertext='Comp_type_desc' /&gt;" Guid="2f26c645-9e52-4a4d-95f3-5a5e96d1d0db" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e94bc239605800163c7d354df0d2322b.png" xmlns="">0bFwRaacaAEm2NLClF8isgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

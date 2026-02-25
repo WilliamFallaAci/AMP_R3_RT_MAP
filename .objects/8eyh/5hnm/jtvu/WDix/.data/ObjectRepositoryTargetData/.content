@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="drg1PRvlN0mdrpcXr0camw" Reference="vPy7nYopc0-jm1pCYXfcew/WDixxDbzkUu_Zh9TFeUiMw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="a84637b6-5856-463b-9397-8eb418a24ac8" CvElementArea="61, 50, 143, 24" CvType="InputBox" DesignTimeRectangle="62, 51, 142, 22" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar*/okcd' type='GuiOkCodeField' /&gt;" Guid="00411299-de4b-46e8-9b61-6e60f83ef79f" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="96b63e0c4fe0d9c0b54ee40843ab717d.png" xmlns="">0hPN2i2VlbkadxzHFtZB4BA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

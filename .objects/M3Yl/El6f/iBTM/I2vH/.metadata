@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Check App State -login success SP",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "I2vH_rB990KMeKmSGDoeBg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/I2vH_rB990KMeKmSGDoeBg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/iBTMRbnlfU2N8b7pDqUh0A",
+  "Created": "2026-02-01T21:56:28.4749832Z",
+  "Updated": "2026-02-01T21:56:28.4749832Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

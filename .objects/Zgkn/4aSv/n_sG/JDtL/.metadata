@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - edit all",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "JDtLaPLKmk2xTUjORN6wsA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/JDtLaPLKmk2xTUjORN6wsA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T00:14:18.5377524Z",
+  "Updated": "2026-02-02T00:14:18.5377524Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

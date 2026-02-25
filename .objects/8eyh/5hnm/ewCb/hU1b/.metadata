@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into - documento ventas",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "hU1bd8myUEqtmbh8qKJo5A",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/hU1bd8myUEqtmbh8qKJo5A",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg",
+  "Created": "2026-01-30T03:40:26.8164263Z",
+  "Updated": "2026-01-30T03:40:26.8164263Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

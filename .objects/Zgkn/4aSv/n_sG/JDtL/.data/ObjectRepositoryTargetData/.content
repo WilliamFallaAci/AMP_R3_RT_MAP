@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tgy3xP_BVUOdc3181_G7zQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="4189e688-e858-4695-b18f-55f41f30e68b" CvTextArea="1834, 592, 60, 12" CvTextArgument="Editar todo" CvType="Text" DesignTimeRectangle="1834, 585, 59, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='spo-Properties-sectionHeader' tag='A' data-bind='click: onEditClick, clickBubble: *, text: clientFormEditLink' visibleinnertext='Editar todo' /&gt;" Guid="5bc5937f-2d63-4d7c-9e6d-e02e5bbea925" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="1b44b5d47023f55676a1ad81df92974c.png" xmlns="">0XM5CqEG5zk2f58lpwyvFEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

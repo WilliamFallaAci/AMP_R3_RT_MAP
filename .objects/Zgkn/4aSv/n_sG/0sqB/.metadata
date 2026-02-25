@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into - pedido venta ampo",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "0sqB5amhkkGWaok1_GjPbg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/0sqB5amhkkGWaok1_GjPbg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T00:43:40.7389792Z",
+  "Updated": "2026-02-02T00:43:40.7389792Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

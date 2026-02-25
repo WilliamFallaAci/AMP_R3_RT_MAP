@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click - file details",
+  "Type": "Element",
+  "Id": "X6-_KPM8o0epoerlGRp1Sg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/X6-_KPM8o0epoerlGRp1Sg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T00:05:22.0785903Z",
+  "Updated": "2026-02-02T00:05:22.0785903Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

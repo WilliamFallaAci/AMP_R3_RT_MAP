@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Check App State - print view",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "qSw0sMw0z0-yjJMn-FUDGw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/qSw0sMw0z0-yjJMn-FUDGw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/3amY7ebD0UWVIMAuL0qrVA",
+  "Created": "2026-02-02T03:20:30.039589Z",
+  "Updated": "2026-02-02T03:26:27.8055742Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

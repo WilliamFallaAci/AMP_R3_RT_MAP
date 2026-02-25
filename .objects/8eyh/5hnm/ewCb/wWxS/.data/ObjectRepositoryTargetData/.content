@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VKyJK-Sd70e-nz50OSk3qg" Reference="vPy7nYopc0-jm1pCYXfcew/wWxS3Tg0bk6wTo8ZQePBBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="26, 180, 23, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/cntlGRID*/shellcont/shell/shellcont[*]/shell' tableRow='0' /&gt;" Guid="ca620b37-f918-405e-9034-0bf7b2127410" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="7e6a5adf9ce68b4b39de411667e63dab.png" xmlns="">03DgSUeTMXkSFUVuwx18YQQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

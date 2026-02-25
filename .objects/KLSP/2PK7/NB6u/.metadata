@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Vista de impresión para LOCL página",
+  "Type": "Screen",
+  "Id": "NB6uczQ9Jka6iVrUhxFnDg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/NB6uczQ9Jka6iVrUhxFnDg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/2PK7SeqpaEm9zljp6UBahQ",
+  "Created": "2026-02-02T03:28:12.7848303Z",
+  "Updated": "2026-02-02T03:28:12.7848303Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

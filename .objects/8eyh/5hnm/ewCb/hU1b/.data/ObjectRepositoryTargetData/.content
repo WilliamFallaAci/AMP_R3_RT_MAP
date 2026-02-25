@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GFIDn37qUk--aC7vDTODGQ" Reference="vPy7nYopc0-jm1pCYXfcew/hU1bd8myUEqtmbh8qKJo5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="24f1a167-0aba-417c-9b1b-6e70d04df68c" DesignTimeRectangle="241, 48, 118, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/*SUBSCREEN_FREESEL:SAPLSSEL:*/ctxt*YN*-LOW' tooltip='Comp. Type                    ' type='GuiCTextField' /&gt;" Guid="a66d118f-bfb8-4672-bfd0-c3e2857b08be" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Especificar valores p.criterios filtros' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="18fb2db6d3df4b8ca199f79ca8460c55.png" xmlns="">0-9OAeFHh2UePxLi9aOt4wQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

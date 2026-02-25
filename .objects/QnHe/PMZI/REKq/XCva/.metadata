@@ -1,0 +1,14 @@
+﻿{
+  "Name": "PasswordField Clv.acc.",
+  "Type": "Element",
+  "TaxonomyType": "Password",
+  "Id": "XCvaFT0ruE6Q687Jxw6-HA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/XCvaFT0ruE6Q687Jxw6-HA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "Created": "2026-01-30T00:14:04.5545917Z",
+  "Updated": "2026-01-30T00:14:04.5545917Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

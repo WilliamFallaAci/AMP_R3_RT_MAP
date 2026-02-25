@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click - impresión RT MAP",
+  "Type": "Element",
+  "Id": "4rPRndKrQkGLoBXavQCVDQ",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/4rPRndKrQkGLoBXavQCVDQ",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/mJi_u3L77EegnZZB7AFzhA",
+  "Created": "2026-01-31T02:29:12.3207663Z",
+  "Updated": "2026-01-31T02:29:12.3207663Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

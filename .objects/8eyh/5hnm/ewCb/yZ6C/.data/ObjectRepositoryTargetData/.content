@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_pEni_Y7dkmGrgvmqimO5Q" Reference="vPy7nYopc0-jm1pCYXfcew/yZ6Cx4WTzU64xAqGJGP8Xg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="6899c44a-e3a8-4119-96af-4519bfa3384a" DesignTimeRectangle="49, 180, 35, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='ICON' id='usr/cntlGRID*/shellcont/shell/shellcont[*]/shell' colTooltip='Icono' text='@09@' /&gt;" Guid="a593ce96-2d75-413b-a48a-d348ab177f73" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="cf63484be8e7ba69581740c943d53402.png" xmlns="">0thELALEj0ke3yhudcfacJw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

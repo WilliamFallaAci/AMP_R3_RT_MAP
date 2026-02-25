@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SaNS2i_ZwEyNqihEXqYF8Q" Reference="vPy7nYopc0-jm1pCYXfcew/Vz6O_SspIEu5c00El9pAXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="39ffaeb6-eb75-4e83-862c-7cb24383269e" DesignTimeRectangle="136, 389, 791, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;wnd cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' aaname='Nombre*:' aastate='enfocable' cls='Edit' /&gt;" Guid="c91dc382-cf42-4a6b-9613-2481e310fbba" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Guardar impresión como' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f2f26aa04f2a6ab708f58c67dacebe8a.png" xmlns="">0H-LovwBYB0yckULaSU3OYQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

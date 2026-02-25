@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - accept button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "xJOfmXJEgka63ynmNM4A2g",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/xJOfmXJEgka63ynmNM4A2g",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/mJi_u3L77EegnZZB7AFzhA",
+  "Created": "2026-01-31T02:39:54.8763821Z",
+  "Updated": "2026-01-31T02:39:54.8763821Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

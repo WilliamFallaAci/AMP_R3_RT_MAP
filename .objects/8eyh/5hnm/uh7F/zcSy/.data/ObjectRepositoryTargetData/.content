@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="njh8-A77zEaAMvVJL3QKxQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="22, 976, 1892, 29" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='sbar' text='No Existen datos para la selección' type='GuiStatusbar' /&gt;" Guid="5e995be6-4afd-49b7-8a21-70b5721c921b" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="26b9435a82b4921bbb8e1b2245102063.png" xmlns="">0MFtqmlWV6UOYwEjEml8uUA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

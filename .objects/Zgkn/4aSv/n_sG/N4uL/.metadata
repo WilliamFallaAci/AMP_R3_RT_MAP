@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - cerrar sesion",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "N4uL_z_6wEmpJxIGRr1NrA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/N4uL_z_6wEmpJxIGRr1NrA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T03:03:48.8416829Z",
+  "Updated": "2026-02-02T03:03:48.8416829Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

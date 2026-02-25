@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - view print button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "LVReUXAIg02F5q-PLrOHyA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/LVReUXAIg02F5q-PLrOHyA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/mJi_u3L77EegnZZB7AFzhA",
+  "Created": "2026-01-31T02:52:53.7868592Z",
+  "Updated": "2026-01-31T02:52:53.7868592Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

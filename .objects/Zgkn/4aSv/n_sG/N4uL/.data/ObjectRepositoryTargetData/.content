@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xxrrzdRfOUuYtkJe2Zinbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="bc82d5c2-3d17-41c0-996a-b800f9af8b9e" DesignTimeRectangle="1747, 219, 180, 40" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='link' tag='A' parentid='*365_TopMenu' role='element' visibleinnertext='Cerrar sesión' /&gt;" Guid="e60e1356-59b8-4326-8057-ab18529e4cbf" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f280bdbbd4e9f18da82945357dbf6d2f.png" xmlns="">0dNAiZtOqRkGUR2dnutKVkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

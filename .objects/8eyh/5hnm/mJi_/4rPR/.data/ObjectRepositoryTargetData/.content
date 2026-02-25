@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z2AieCxW9k-g7P0FVifi0w" Reference="vPy7nYopc0-jm1pCYXfcew/4rPRndKrQkGLoBXavQCVDQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="33, 406, 23, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/cntlGC_CONTALV/shellcont/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="44b6c100-9337-402a-82fc-ab64d56aff44" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Datos de Ejecución RX' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="0aa68aa8cc26c7c3fd02a242b0631fbd.png" xmlns="">09x80zO3_okyKgVJzcc88cA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Chrome Calidad - Documentos_RT_MAP",
+  "Type": "Screen",
+  "Id": "n_sGpZU-F0K7li0cfSUbGw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/4aSvVhxaoUm1BWlvol-9hg",
+  "Created": "2026-02-01T22:12:47.8250617Z",
+  "Updated": "2026-02-01T22:36:05.5985617Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

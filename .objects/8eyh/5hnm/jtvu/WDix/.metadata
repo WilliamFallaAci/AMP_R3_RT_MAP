@@ -1,0 +1,14 @@
+﻿{
+  "Name": "OkCodeField okcd",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "WDixxDbzkUu_Zh9TFeUiMw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/WDixxDbzkUu_Zh9TFeUiMw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/jtvubggeGU6_3VdSoBEG8Q",
+  "Created": "2026-01-30T02:43:26.4254852Z",
+  "Updated": "2026-01-30T02:43:26.4254852Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

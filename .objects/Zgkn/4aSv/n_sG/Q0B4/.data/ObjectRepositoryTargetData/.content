@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CB51oFtT9UmpL5L8qEZR0g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="66a39372-edae-4668-b728-83b44a9b0b34" DesignTimeRectangle="1328, 727, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='PosicionPVAmpo' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="1673c524-f267-4cb9-9fe3-c708bdb34c63" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f02c932d2f564cf6cc727557a7ea930c.png" xmlns="">0N0RbinVsWEeDVpyJh6VPmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

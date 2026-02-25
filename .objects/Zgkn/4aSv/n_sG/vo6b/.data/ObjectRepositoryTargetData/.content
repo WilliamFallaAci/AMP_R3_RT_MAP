@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0_fN2khcmk2ydArEXr0-yw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" DesignTimeRectangle="1427, 351, 285, 24" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='OperationMonitor-itemName' parentid='appRoot' tag='DIV' data-bind='bindableHtml: title' visibleinnertext='Se cargó 1 elemento en Documentos_RT_MAP' /&gt;" Guid="8b26bb5b-0a81-4e07-8956-4e2858595de2" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f7b637202d28d014ba62154f8db180e3.png" xmlns="">0Nup3DDjXOU-e1QLH-PXDGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

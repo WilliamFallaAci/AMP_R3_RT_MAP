@@ -1,0 +1,17 @@
+﻿{
+  "Name": "wants to go out of system",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Pts4QeEJKUS_S3VdjyFkIg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/Pts4QeEJKUS_S3VdjyFkIg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/jtvubggeGU6_3VdSoBEG8Q",
+  "Created": "2026-02-02T03:49:32.7067642Z",
+  "Updated": "2026-02-02T03:51:49.7312623Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

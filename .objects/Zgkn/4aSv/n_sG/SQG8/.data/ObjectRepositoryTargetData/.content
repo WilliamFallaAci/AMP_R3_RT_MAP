@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cEicOKZZDUqp3-xfF4GidQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="4fc51b14-f96c-4666-b7d9-84796458f1f2" DesignTimeRectangle="1328, 961, 527, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl class='od-ContextualMenu-link' parentid='appRoot' tag='A' title='Editar elemento' visibleinnertext='{0}' /&gt;&quot;,TransactionItem(&quot;Columna3&quot;).ToString.Trim)]" Guid="b5ba7528-bf89-4075-87b9-034082d3c816" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="bad3ea59fd6d8957b85a9bb3a92e16df.png" xmlns="">0Sch2f7GO-0CNAtSswziqjA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

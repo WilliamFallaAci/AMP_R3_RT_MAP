@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WvNYXTRYFEmknzm-qbE4oQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="fe6c3607-923d-49e9-8d48-a909bed625c6" DesignTimeRectangle="687, 85, 1087, 18" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='*' aaname='Footer' cls='AfxOleControl*' /&gt;&lt;wnd ctrlid='*' title='myContainer' aaname='myContainer' /&gt;&lt;wnd ctrlid='*' cls='SysListView*' /&gt;&lt;ctrl name='Entorno *SA)' role='list item' idx='1' /&gt;" Guid="4152530a-3b17-4999-b503-59fc6a64d112" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP Logon*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="83901e1236fefc45728d0bc95c2dbdd7.png" xmlns="">0HhFaa3i0c0KqnODq1wmVfQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Type Into - comp type desc",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "L8NiVJnqlU612Ui5PQnRPQ",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/L8NiVJnqlU612Ui5PQnRPQ",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T01:11:21.603551Z",
+  "Updated": "2026-02-02T01:14:46.7289305Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

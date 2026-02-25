@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XGHwzXmlhkqq5xQCoA2M9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="bc7d6d3a-8ad0-47e4-81f9-16657c5dc786" CvElementArea="148, 122, 19, 19" CvType="Icon" DesignTimeRectangle="148, 123, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar*/btn*' tooltip='Fijar filtros*(Ctrl+F5)' type='GuiButton' /&gt;" Guid="55a63e8e-2839-4a79-8ebe-2830fa914087" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADLSURBVEhLY3hx49x/WmIGdAFq42FqgWTW9P8MMb0kYZAedHPwWjB51/n/C/ffJgqD1JJlwYQtV4nCZFng3LoG7gt0A9ENB6klyQIQrlu6Cxy2abP2YrUEFjwgw0Fq0PUTtACEd11+APcNsiUgNshQmBy6PqItgOHIqdvglsBcDRLbe/oS2BKyfYCMkVMWKOhg4iBfIvPR8eC0AMQGGQzCFEUyLgtgyRKEQXGBrhYZk2UBviBBx4PLAuTCDV0eFybaAnLxqAUE8dC3AADp85EOJGceFAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="3ce68f4264e985bb63277aca6f74a69f.png" xmlns="">0caXra-ZXjkCIAsRdBWJyhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

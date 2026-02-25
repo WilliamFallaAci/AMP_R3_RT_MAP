@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - comp type desc option",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "SQG8h5-NQUOk1iQ-tXD8ZA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/SQG8h5-NQUOk1iQ-tXD8ZA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T01:31:39.1973304Z",
+  "Updated": "2026-02-02T01:31:39.1973304Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

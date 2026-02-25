@@ -1,0 +1,225 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SAP_FilterGridResults" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SAP_FilterGridResults_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SAP_FilterGridResults" sap:VirtualizedContainerService.HintSize="1287,814.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="SelectedRowNumber" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message - start" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Inicia filtrar grilla de resultados en SAP Logon&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Interno Subcontratación" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2539" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do - interno subcontratación" sap:VirtualizedContainerService.HintSize="486,2420" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - comp. type" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="d065d605-8a03-46ec-8dd7-6a73739db807" ContentHash="Fq9oiFyQmEmrTxbhEyF3Gg" CvTextArea="1702, 164, 68, 14" CvTextArgument="Comp. Type" CvType="Text" DesignTimeRectangle="1701, 161, 91, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='ZCOMPTYPE' id='usr/cntlGRID*/shellcont/shell/shellcont*/shell' /&gt;" Guid="e25106da-5b67-4ff1-9749-ee643d15cdf7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAXCAYAAABtR5P0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM3SURBVGhD7ZnLUhpREIb7iSxm8igKgfcQgWB4CMtEjFKsU1mpKTFGvGxdiJcMggyCljFeEiubrP9UH4ZhphkuMTPqYhZf9Zz/9Ok+55+Rm2Ts7yDkeaC72j5Cnge6v/2Bnc8fwfH3w0NIgEiv6eHnHUqfiuB4c9UOCRDpNf26v1UCx0uzFhIg0mv1ssMCR5kc4i/Sa7q9/q4EjheN05AAkV7T9WVbCRzbZ1WbvawGIrLRsxuu+Wfhawa6Y09uYijK/BeG9Jqu2udK4NiqG4rdNxEQRVG0xq16HgktjV17/ALYTEN37fHlI72my3NTCRw7SXkkKILcZv9ihTp092lz5Flm5NSN68wnlgwUX4tcztPSyEld9hlFn/kl5LROTztnKQrih2Zkz85a7zn/kF7TRbOhBI7N6hGaGzPQaQoFvu5jDW/5gIvWeHEKpM1g215H0DNrvTm+ATLXyuvq25lIr8a/4LVP7hF7Z48LMavPiJ6c59r3Y/YzBtJrajdqSuBoGocw81OgSBJlvpaUktBdc/OI0wRmSx5zg8ZSd9aQ/YbBddh8l861uprjemhP5xo55y/Sa5f5jW8VNBYmQTSJZb6W8FwkiS1bW0U2QogvVNBYT0Jzzg0aS/1b57DZdY9+w+A6HvtcjhK01Cq2UhOg6Ly7t53n6KnqyDfvR+xnDKTX1Do7VQLHTtIQM/oOLA7hZbYce+keJo5k0Dr1gEwiHnGcYWhPPoNHnQCQXlPz1FACR9M4UJTTE+rpL1hj05hDPDKNsrGCWX7S85ae54OyfgCzNA29ez1sLHTVKzpn9y5EqVdzGFzHtccunT26aozRU0+vOMZedf8f6TWZ1WMlcDSrhzblDN+A3p9ifNGa2+DX2q7Ob3gOXUuiPGrsWk8gZ071UL35Sc0TVcfRX9Sw92vnDu5pVtcwa3/aIVBsvq+mP7i9poZxpASOrdpJ8HxJQddS2JW6b7xHgj+COrXAe46H9JrqxxUlcJRfhwNhK4NXWgZ7UvcJ9c08/sGtB9xzXKTXVDs6UAJH+UNQiL9Ir6l+Yt2Nk0rfbxEh/iK9Jvl/xZCng/7ctNQFx5DgcXodmv/EOL3+C8gs0VOyWiUeAAAAAElFTkSuQmCC" InformativeScreenshot="8e71d967634462d614d2a6c2e308d817.png" Reference="vPy7nYopc0-jm1pCYXfcew/wyx4sGjaTUyP4UTsrIrjTA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - fijar filtros" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="bc7d6d3a-8ad0-47e4-81f9-16657c5dc786" ContentHash="XGHwzXmlhkqq5xQCoA2M9A" CvElementArea="148, 122, 19, 19" CvType="Icon" DesignTimeRectangle="148, 123, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar*/btn*' tooltip='Fijar filtros*(Ctrl+F5)' type='GuiButton' /&gt;" Guid="55a63e8e-2839-4a79-8ebe-2830fa914087" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADLSURBVEhLY3hx49x/WmIGdAFq42FqgWTW9P8MMb0kYZAedHPwWjB51/n/C/ffJgqD1JJlwYQtV4nCZFng3LoG7gt0A9ENB6klyQIQrlu6Cxy2abP2YrUEFjwgw0Fq0PUTtACEd11+APcNsiUgNshQmBy6PqItgOHIqdvglsBcDRLbe/oS2BKyfYCMkVMWKOhg4iBfIvPR8eC0AMQGGQzCFEUyLgtgyRKEQXGBrhYZk2UBviBBx4PLAuTCDV0eFybaAnLxqAUE8dC3AADp85EOJGceFAAAAABJRU5ErkJggg==" InformativeScreenshot="3ce68f4264e985bb63277aca6f74a69f.png" Reference="vPy7nYopc0-jm1pCYXfcew/NN-m3h7G-0eLZSw7R2bRKw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - documento ventas" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Text="[TransactionItem(&quot;Columna4&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="24f1a167-0aba-417c-9b1b-6e70d04df68c" ContentHash="Sw4m90CMjUGtwjBjmV_RXA" DesignTimeRectangle="241, 48, 118, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/*SUBSCREEN_FREESEL:SAPLSSEL:*/ctxt*YN*-LOW' tooltip='Comp. Type                    ' type='GuiCTextField' /&gt;" Guid="a66d118f-bfb8-4672-bfd0-c3e2857b08be" InformativeScreenshot="18fb2db6d3df4b8ca199f79ca8460c55.png" Reference="vPy7nYopc0-jm1pCYXfcew/hU1bd8myUEqtmbh8qKJo5A" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Especificar valores p.criterios filtros' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - execute filter" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="43d57cf2-8e39-4db8-ae65-8d734977b829" ContentHash="Oy1gOoHG3Eaj8Yxp21vYlA" DesignTimeRectangle="701, 377, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[*]/btn[*]' tooltip='Ejecutar   (Intro)' type='GuiButton' /&gt;" Guid="a5399029-1a07-4250-ac0f-4d536ca6d9bc" InformativeScreenshot="15febf769c24bc0005a8eb8f70aef639.png" Reference="vPy7nYopc0-jm1pCYXfcew/i1JeKRx7E0WQL-HxVbdJOA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Especificar valores p.criterios filtros' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - cara comp" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="814fedf5-f94b-4095-9934-b3b7aaf6d25d" CvTextArea="1611, 164, 65, 14" CvTextArgument="Carac.Comp" CvType="Text" DesignTimeRectangle="1610, 161, 91, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='ZCOMP_TYPE' id='usr/cntlGRID*/shellcont/shell/shellcont[*]/shell' /&gt;" Guid="a5e4bfdc-fd45-4ca9-908f-608d68fa876b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAXCAYAAABtR5P0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANsSURBVGhD7ZnbTttAEIbniZCdvkAvK/WSQMNdH4JAAoGHQFQEtRG3Rb3gEERSSjiUqkVRRQjgkBCHBEShQIv6Bn81G9us7dhFagyo9cUneWdnZyef1nEOpBXXEfIw0FW1iJCHgZbn3uLp835cX17g181NSICw4/WlWcs15eZnkXs3g5sfV/h+1goJEHYsu6aN/DyeRV/i5/UlTvVqSICwY5ZvuqbN/JwI8K3gTA7pLuxYdk1bKwvi5F+ef8NJ/TAkQNgxyzdd06cPiyJwftpC66hisTmqgogsIqN52/x98Bh66CbsWHZNnwtL4uSftY7RrGmCjREFRH2YMcbNWhoDagIb1jh4HkMP3YYds3zTtZDPgdNj3UhKY4AUjK+4F7eFSCdxJNeeW0kgoiYw/oLjfRj3yhPkMK7ezlFHod49WPtZ9aU8EbfvP/Baw4zoS8q19euoESDsWHZN2+vL4uSfNOpoVMpo5IcQoSgyfO2HyFMwljevCQPTf8irlJHpJ1D/K3eea41XD1mMqdJe01GQOoQ1ax0hkszezsl9mbmOfteSym2NAGHHLN90TcXNvAi06lXo2i70dBSkxFHga1+ySCk9SOV2oefiiHiukfK0ScRYqivHgV8Prr24pkcfXmNnXK7h3K+LsGPZNX3dWhEnnwP1gxLqU70g6sUbvu7A6nCP9JbSg9HlEurLcahKHKt3yfOpbeHXA8/Z9lrEqEKITXXow2vsjB+05Ysenft1EVk+j6m8vS4CzaNDI8mnEZsUftEe8v3yvKTa8OnBVUPKdfbhNe4Uv1Nffwc7ll3TQfGjOPmNQw26tiMoJPjU9iJjjHVtAjFlEBmO9020Y7lBRMStalwrgyjI6zvlaQtIKXQ7J5HpI5CzRoceCkaNWNqIp/lOMNY5+vAc+/UbIOyY5ZuuqVr6LAJ6ZQ96ZdeikJTfNgixaY7zKTM/pUQRU3uQyu9Cz8cRUeMoWOs98sRcFin5007/pIiLB7GthlcPxn5WnB/MUlyu4TW2rXfvGxx7NtdUK30RJ7+uldGs7v8fvB9GRB3GhjMeMOyY5ZuuSd8rikBtr+T6OvzPsprEEzWJTWc8YNix7JqalZI4+dXyjuuHoJDuwo5ZvumaLhrtJ3Btv+T6LSKku7Bj2TU5/1cMuT/C/3AfkFD+A/Ibn4WR2qFdQR8AAAAASUVORK5CYII=" InformativeScreenshot="353a5b0da8cfb65dee859b3d7dd11acc.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - fijar filtros" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="bc7d6d3a-8ad0-47e4-81f9-16657c5dc786" ContentHash="XGHwzXmlhkqq5xQCoA2M9A" CvElementArea="148, 122, 19, 19" CvType="Icon" DesignTimeRectangle="148, 123, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar*/btn*' tooltip='Fijar filtros*(Ctrl+F5)' type='GuiButton' /&gt;" Guid="55a63e8e-2839-4a79-8ebe-2830fa914087" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADLSURBVEhLY3hx49x/WmIGdAFq42FqgWTW9P8MMb0kYZAedHPwWjB51/n/C/ffJgqD1JJlwYQtV4nCZFng3LoG7gt0A9ENB6klyQIQrlu6Cxy2abP2YrUEFjwgw0Fq0PUTtACEd11+APcNsiUgNshQmBy6PqItgOHIqdvglsBcDRLbe/oS2BKyfYCMkVMWKOhg4iBfIvPR8eC0AMQGGQzCFEUyLgtgyRKEQXGBrhYZk2UBviBBx4PLAuTCDV0eFybaAnLxqAUE8dC3AADp85EOJGceFAAAAABJRU5ErkJggg==" InformativeScreenshot="3ce68f4264e985bb63277aca6f74a69f.png" Reference="vPy7nYopc0-jm1pCYXfcew/NN-m3h7G-0eLZSw7R2bRKw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - cara comp type" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Text="[TransactionItem(&quot;Columna3&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="13e21d1c-be6e-400c-a21b-66d8b50a9ba0" DesignTimeRectangle="241, 70, 118, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/ssub*SUBSCREEN_FREESEL:SAPLSSEL:*/ctxt*DYN*-LOW' tooltip='Carac. Comp Type              ' type='GuiCTextField' /&gt;" Guid="29e62236-1391-4f7b-ada3-f7fc9d35bfe3" InformativeScreenshot="45f6e815a6f682c9ee3517369da2f13c.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Especificar valores p.criterios filtros' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - execute filter" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="43d57cf2-8e39-4db8-ae65-8d734977b829" ContentHash="Oy1gOoHG3Eaj8Yxp21vYlA" DesignTimeRectangle="701, 377, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[*]/btn[*]' tooltip='Ejecutar   (Intro)' type='GuiButton' /&gt;" Guid="a5399029-1a07-4250-ac0f-4d536ca6d9bc" InformativeScreenshot="15febf769c24bc0005a8eb8f70aef639.png" Reference="vPy7nYopc0-jm1pCYXfcew/i1JeKRx7E0WQL-HxVbdJOA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Especificar valores p.criterios filtros' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State - @09@ icon" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,704" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[If(CDbl(Config(&quot;SAP_TimeoutShort&quot;)) &gt; 7,&#xA;&#x9;&#x9;Math.Ceiling(CDbl(Config(&quot;SAP_TimeoutShort&quot;)) / 2),&#xA;&#x9;&#x9;CDbl(Config(&quot;SAP_TimeoutShort&quot;)))]" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - row data" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="740985f9-0a96-4b79-834d-d435bd4e4f69" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="VKyJK-Sd70e-nz50OSk3qg" DesignTimeRectangle="26, 180, 23, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/cntlGRID*/shellcont/shell/shellcont[*]/shell' tableRow='0' /&gt;" Guid="ca620b37-f918-405e-9034-0bf7b2127410" InformativeScreenshot="7e6a5adf9ce68b4b39de411667e63dab.png" Reference="vPy7nYopc0-jm1pCYXfcew/wWxS3Tg0bk6wTo8ZQePBBg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw - BE generar documento" Exception="[New BusinessRuleException(&quot;No hay documento RT MAP para generar en SAP&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable CVScreenId="6899c44a-e3a8-4119-96af-4519bfa3384a" ContentHash="_2vLufpqa0KS8Snt0qIHYw" DesignTimeRectangle="49, 180, 35, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap colName='ICON' id='usr/cntlGRID*/shellcont/shell/shellcont[*]/shell' colTooltip='Icono' text='@09@' /&gt;" Guid="a593ce96-2d75-413b-a48a-d348ab177f73" InformativeScreenshot="cf63484be8e7ba69581740c943d53402.png" Reference="vPy7nYopc0-jm1pCYXfcew/yZ6Cx4WTzU64xAqGJGP8Xg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1008" ContentHash="0RYWhPCzVkK_mNP1ReOc8w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVFhHY/j//z/jQGIGdAF641EHjDpg1AEMTjWr2Z2qVx8cEFyzppDBqXoNp1PNmv8DgNc6164RHCgHgCwXhkQB/R0AtxzsgEOnLlo6Vq/+71i9ikp49X+nGhDGsBjDcrAD3n76/vn+i4//qYH3nr/3368B5gjCloMd8P7Lz//UwGdvPv7vVzH7v13pImwOwGo51Rxw4fbT/96lM/7bFi/AFgXrQakd3WKqOeD87af/PYun/bcrWYjN5+td6tbitJxiB4B87lkyHWr5KmSL/xJjOdgBD56/LW1bsu9/y6JdJOLd/33KZ1NkOdgBVrkzOO0rlv23L19KMnaoXI4e7GDLnetwxzk6pmZBBPU58ZZT0wEk+5zaDiA6ztEx5dVxzZqZ5FoOdgC6AL3xqANGHTDqgAF3AAD5AWfDouj2iwAAAABJRU5ErkJggg==" InformativeScreenshot="ad3214c2298f68b18b30f02395d39c28.png" Reference="vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Interno/Subcontratación' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message - end" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finaliza filtrar grilla de resultados en SAP Logon&quot;]" />
+  </Sequence>
+</Activity>

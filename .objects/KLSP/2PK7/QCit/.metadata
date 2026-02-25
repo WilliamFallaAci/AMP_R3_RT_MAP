@@ -1,0 +1,13 @@
+﻿{
+  "Name": "view print",
+  "Type": "Screen",
+  "Id": "QCitprawhkGf7N-lws2AAw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/QCitprawhkGf7N-lws2AAw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/2PK7SeqpaEm9zljp6UBahQ",
+  "Created": "2026-02-02T03:28:48.2050135Z",
+  "Updated": "2026-02-02T03:28:48.2050135Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

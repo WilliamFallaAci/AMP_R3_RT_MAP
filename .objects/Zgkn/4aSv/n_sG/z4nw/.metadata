@@ -1,0 +1,17 @@
+﻿{
+  "Name": "click - cargar link",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "z4nw8CtMQkyZfGQvcfxmyw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/z4nw8CtMQkyZfGQvcfxmyw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-01T22:45:57.1521934Z",
+  "Updated": "2026-02-01T23:01:03.8219026Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

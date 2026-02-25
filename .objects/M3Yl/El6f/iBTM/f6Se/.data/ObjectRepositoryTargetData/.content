@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wrc4Ws_WeECrQPqScl2jNw" Reference="vPy7nYopc0-jm1pCYXfcew/f6SeGod9z0K26LiHFQzf-g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="957c3b42-f783-4a36-ad39-8a6a781c8ec9" DesignTimeRectangle="943, 179, 165, 36" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Iniciar sesión' role='dialog' /&gt;&lt;ctrl name='Nombre de usuario' role='editable text' /&gt;" Guid="fd3a962b-8362-4db7-b470-05a593ede9b2" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllIte*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="aa41dda9f3adacd9fe5b4ced0a2ee14c.png" xmlns="">0KME3kTeA8EuT9nzx9KdWHA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

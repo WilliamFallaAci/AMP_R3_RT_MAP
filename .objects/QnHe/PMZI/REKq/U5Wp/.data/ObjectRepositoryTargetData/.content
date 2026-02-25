@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nFVjkbFDUUu8pKT9XPAHRA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c853090c-c81a-451e-a825-375ba42975cc" CvTextArea="36, 92, 144, 15" CvTextArgument="SAP Easy Access" CvType="Text" DesignTimeRectangle="22, 86, 1892, 31" ElementType="Toolbar" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='titl' text='SAP Easy Access' type='GuiTitlebar' /&gt;" Guid="244e5ba6-9a68-45c0-9b7c-c6f1bdfa1847" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="ea81749fc9a68c70b01e4655cff6d268.png" xmlns="">0AxVNWtv7PkGJGOyw_ec9xQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

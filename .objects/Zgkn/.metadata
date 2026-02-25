@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Calidad - Documentos_RT_MAP - Todos los documentos",
+  "Type": "App",
+  "Id": "ZgknbRFWjki8_EYc3unZwA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/ZgknbRFWjki8_EYc3unZwA",
+  "Created": "2026-02-01T22:12:19.3914803Z",
+  "Updated": "2026-02-01T22:12:19.3914803Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

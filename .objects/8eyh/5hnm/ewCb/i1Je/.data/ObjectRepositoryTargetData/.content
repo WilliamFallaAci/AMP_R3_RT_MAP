@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HXCzfD1QU0CtzQOrO1ImyQ" Reference="vPy7nYopc0-jm1pCYXfcew/i1JeKRx7E0WQL-HxVbdJOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="43d57cf2-8e39-4db8-ae65-8d734977b829" DesignTimeRectangle="701, 377, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[*]/btn[*]' tooltip='Ejecutar   (Intro)' type='GuiButton' /&gt;" Guid="a5399029-1a07-4250-ac0f-4d536ca6d9bc" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Especificar valores p.criterios filtros' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="15febf769c24bc0005a8eb8f70aef639.png" xmlns="">0VWb395DuB0G2BGn3BuOMtQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click - select environment",
+  "Type": "Element",
+  "Id": "JWqft-sTiECwCXAv6ExkNQ",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/JWqft-sTiECwCXAv6ExkNQ",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "Created": "2026-01-30T00:00:47.2633276Z",
+  "Updated": "2026-01-30T00:00:47.2633276Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

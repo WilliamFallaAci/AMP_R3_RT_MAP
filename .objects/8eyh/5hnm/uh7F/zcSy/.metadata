@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Check App State - data does not exist",
+  "Type": "Element",
+  "Id": "zcSyl4cGSkOOawUXguJQCg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/zcSyl4cGSkOOawUXguJQCg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/uh7Ftm3nB0OJoTJFB9koPg",
+  "Created": "2026-02-04T00:45:03.2013122Z",
+  "Updated": "2026-02-04T00:45:03.2013122Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

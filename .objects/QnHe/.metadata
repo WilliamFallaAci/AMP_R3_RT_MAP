@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SAP Logon",
+  "Type": "App",
+  "Id": "QnHekuC3ek-vSw9f4wMReg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/QnHekuC3ek-vSw9f4wMReg",
+  "Created": "2026-01-29T02:46:51.5429013Z",
+  "Updated": "2026-01-29T02:46:51.5429013Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

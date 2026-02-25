@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - guardar button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ka3VkaqXoEiJcfUG24_L8Q",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/ka3VkaqXoEiJcfUG24_L8Q",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-02T01:37:17.9500436Z",
+  "Updated": "2026-02-02T01:37:17.9500436Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

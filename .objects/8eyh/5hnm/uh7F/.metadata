@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Rx",
+  "Type": "Screen",
+  "Id": "uh7Ftm3nB0OJoTJFB9koPg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/uh7Ftm3nB0OJoTJFB9koPg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/5hnmp6dkmkKTQKc84lBH7w",
+  "Created": "2026-01-30T02:51:56.7383151Z",
+  "Updated": "2026-01-30T02:51:56.7383151Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

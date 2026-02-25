@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5Xihx2yjvEquuWlw-4lhUw" Reference="vPy7nYopc0-jm1pCYXfcew/I2vH_rB990KMeKmSGDoeBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="7d90197f-1780-4a95-888c-c18778e0c55e" DesignTimeRectangle="248, 203, 1544, 66" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ms-siteHeader' parentid='appRoot' tag='DIV' innertext='Calidad' parentclass='ms-compositeHeader-mainLayout' /&gt;" Guid="58b87499-0777-42a8-b846-5fabb25dff8e" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="05de828e3736be2a13749c96a9d904c4.png" xmlns="">0M4DbrSlwzEO3WI0pk_wsNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

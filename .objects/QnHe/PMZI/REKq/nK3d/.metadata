@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Clave acceso nueva",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "nK3dCzBpXEi6p5XDizZEYg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/nK3dCzBpXEi6p5XDizZEYg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "Created": "2026-01-29T04:16:38.5660217Z",
+  "Updated": "2026-01-29T04:16:38.5660217Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

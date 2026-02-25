@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SAP Logon",
+  "Type": "Screen",
+  "Id": "REKqe_PRgE6EKdi5h0fCjw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/PMZIbEX0ykyK_o7VhCZpcg",
+  "Created": "2026-01-29T02:46:52.5086903Z",
+  "Updated": "2026-01-29T02:46:52.5086903Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

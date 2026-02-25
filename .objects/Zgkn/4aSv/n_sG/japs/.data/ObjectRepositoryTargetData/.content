@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Rv3X-neNrU-NxCpDSGqx8w" Reference="vPy7nYopc0-jm1pCYXfcew/japsGUYbVUi2Io_lsGRQ3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" DesignTimeRectangle="248, 448, 40, 40" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='checkbox' tag='DIV' class='ms-DetailsRow-check check*' data-automationid='DetailsRowCheck' role='element' uipath-html-title='{0}' /&gt;&quot;, Path.GetFileName(in_PdfFilePath))]" Guid="f4183476-3b52-4c15-97e3-177bd58a5dc9" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="4bdf4b41fcae28f16fa3b5300d26e2a0.png" xmlns="">0Ux8JLluZ1EC4yLTCFXeWQQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*" Name="Path.GetFileName(in_PdfFilePath)" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

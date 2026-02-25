@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CTextField Documento de…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "cRUid0s9P0mp0BHpnYnMlQ",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/cRUid0s9P0mp0BHpnYnMlQ",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/uh7Ftm3nB0OJoTJFB9koPg",
+  "Created": "2026-01-30T03:00:29.3311056Z",
+  "Updated": "2026-01-30T03:00:29.3311056Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "InternoSubcontratación",
+  "Type": "Screen",
+  "Id": "ewCbUJmUoEqwN9SM-E2XSg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/5hnmp6dkmkKTQKc84lBH7w",
+  "Created": "2026-01-30T03:22:08.8356837Z",
+  "Updated": "2026-01-30T03:22:08.8356837Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

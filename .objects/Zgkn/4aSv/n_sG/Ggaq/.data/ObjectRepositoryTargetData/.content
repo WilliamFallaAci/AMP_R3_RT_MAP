@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SSRmEA7540-QCJv93vq5Wg" Reference="vPy7nYopc0-jm1pCYXfcew/Ggaq2nVJ8EunnaKJ_wSPVA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="968b88af-4b7e-4542-9989-60067e73ed52" DesignTimeRectangle="252, 465, 463, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd aaname='Nombre*:' aastate='enfocable' cls='Edit' /&gt;" Guid="5aef6ad6-ae6c-4b94-b0b4-aee9376e8bcd" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="33521e6f52763c8ac6d2698c9fa777a1.png" xmlns="">0GnpxfvwvMkGtyYMe2ooOTw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

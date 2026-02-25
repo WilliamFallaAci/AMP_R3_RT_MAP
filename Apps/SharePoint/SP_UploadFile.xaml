@@ -1,0 +1,368 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SP_UploadFile" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_PdfFilePath" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>SP_UploadFile_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SP_UploadFile" sap:VirtualizedContainerService.HintSize="1165,5011" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message - start" sap:VirtualizedContainerService.HintSize="1130,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Inicia cargar PDF en Share Point&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Calidad - Documentos_RT_MAP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1130,4647" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1128,4496" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope - upload file" sap:VirtualizedContainerService.HintSize="1094,842" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="5" RetryInterval="00:00:00.5000000">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,439" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click - cargar link" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="baeeefa8-d951-4e67-9c36-c4fe2442f7c6" ContentHash="LqS-NcumX0O8zKUjceK__g" CvTextArea="383, 307, 43, 16" CvTextArgument="Cargar" CvType="Text" DesignTimeRectangle="356, 294, 97, 40" ElementVisibilityArgument="[UiPath.UIAutomationNext.Enums.NElementVisibility.Visible]" FullSelectorArgument="&lt;webctrl class='CommandBarItem-link' parentid='appRoot' tag='DIV' data-automationid='link' visibleinnertext='Cargar' /&gt;" Guid="14e6576a-2fdc-4037-b877-8f7ded978c51" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAsCAYAAAB8K3ZrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKCSURBVHhe7Zy7atxAFIb3EfwEeQk9jN4hRbpJtRi/yVQBF2mMS6NAAgFv3Ig0wYiNC7MY1jYCof43o4s1OhpJq4vRWfsMfMXOjLTa+fQfjZpdQRq7ttrv9xB4sUrTFAIvRApDRApDRApDRApDRApDRApDRApDRApDRApDRApDRApDhku5C+F9+YGTLk5D/KPHCQczXIrw5swgJcFTnDj6hbFMlJLgf3CNT1+v8e1+rJgI2vfgeRW+jhzzPg4TpBRCyufIGDGRht+QEEErjYjO/UCMlFImZIPLvyG80xC/fm8GJiaA8jyogPYfCzHimPa1EMeIaV8HI6Qk2P00Ajb4/pDku7Fit7UbIiZQ8Py+ROTiXkubPb84Xqt8rJQbab+arwIEyk4iLZUKQe27fGitXo9tXo/F9gJna43w0TFm8xhCr89wsXWMtTBYytOfm0qI6bOkmM+5mBtc9dxF2eL1/fBAWUkiyTJSSNKyc1JxdnmMNBQRVAkrboC+a7K5Pce6S0wmZI3zW8dYB4OlpOkzdqUQA5GSJenh2XFcnYOkEGp3fSNp+SLTclhPSp36NRRJiZrzOmkTM1KIYYQUQkPKgTQW1QUtN11S3ItKpZjP9vkmSzFQMROEGJaT0rsIzTu/OymujUO9RFFBsySlpBSznSbEsKCU6qHcWMhsS0wXKV/0dilFClqfKVRykcK5pBiMmM/ThBgWlZJRvKvYJcW5k/IUVGdSDKTc0d1XISnHh1IzJmVGlpfyptB0HAfvWkqeNPtd5Dh4V1Lq5S4veccmxDBdijA7IoUhIoUhIoUhIoUhIoUhIoUhIoUhIoUhIoUhIoUhIoUhK/pvB9KWbyKFYXsBoTLHGksm650AAAAASUVORK5CYII=" InformativeScreenshot="06d909b2fd9f8376bce5cfc8bc7ebe3b.png" Reference="vPy7nYopc0-jm1pCYXfcew/z4nw8CtMQkyZfGQvcfxmyw" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click - archivo option" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="38318034-205f-47b9-a9b5-40c659365899" ContentHash="6qKtilF_gkS-93Ersv_gZQ" CvTextArea="367, 357, 55, 13" CvTextArgument="Archivos" CvType="Text" DesignTimeRectangle="356, 346, 181, 37" ElementVisibilityArgument="[UiPath.UIAutomationNext.Enums.NElementVisibility.Visible]" FullSelectorArgument="&lt;ctrl name='Calidad - Documentos_RT_MAP - Todos los documentos' role='document' /&gt;&lt;ctrl name='Archivos' role='menu item' /&gt;" Guid="fd5e1774-610a-46f7-96fc-372d293fba92" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALkAAAApCAYAAABpy4gfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALISURBVHhe7ZxLjuIwEIZzHqRZedG7uUeOkgPlHIOEsmKDEI8FEkI8BUIs4AA1+p0YHMdNd09bM0Pp/yQL2g5lq/urSoVFZ7fbTc7ns+z3e1mtVrJYLGQ+n8t0OpXJZPLXx3g8ltFoJMPhUAaDgfT7fTmdToJzfpfr9WpjISZiYw/shT3Dc3C83oCzcBcOw2U4Dbezy+Vif8Af/1+P4/Eoh8NBNpuNLJdLmc1m9pCQMxWIhZj4ZWAP7IU9sXd4Ho7XH3A7wxtYj1dCNOHczlDFUN4pOdEGnIbb2Xa7tbduSk60AafhdoaeFA07JSfagNNwO1uv1/bJlJITbcBpuE3JiVooOVEPJSfqoeREPZScqIeSE/VQcqIeSk7Uk17yqhBjcil34cJX2EmZGymqcN5RSWGerRPyILHkkDOXosgl/5blH0lOyOdJK/mulDwvZYdXU8ifO0rJSTqSSr4rXQWPSYoWI5eyRDtjxLhFmxCmnjMm+HzdltRrfgvkxUd7hMTydmrP1de6+J1WKtifiaWPhJLXrYoTCMLfRbY0wvpzVjBfukpKT3Lj3Q2qwnTErUM1yRNLABfH39M+M7i4YTJWUlFydaSTPKyonZYllLEWN967h/KF8drrrTj+dZ0z2MlOEsTPQLSQTHJbab3bfrv9sFc8qbghkbUnkt+fBexb76E3TLyGdnJ57Uz8MOTFSSR5KLCb9iXrXpOqkj9aJfca+8wD7Bvz2SZqbIG8NGkkf6ditsXuSt79Tr3dk39e8qaCF8W9ojezH/TklRTeWvc5gmgggeTP+9pHdYxIXl/Qam/8XvkrkrtvSbqOeu2IHX5lD9aiiUpenQSSE/J/Q8mJeig5UQ8lJ+q5S/7z7Yf0ej1KTtRxl/zXcGT/wyslJ9pgu0LUQ8mJeig5UQ8lJ+qh5EQ9lJyoh5IT9VByoh5KTtRDyYl6nOS/AXu8GILT3tvCAAAAAElFTkSuQmCC" InformativeScreenshot="64488603072a625baaeb77735f67dfc0.png" Reference="vPy7nYopc0-jm1pCYXfcew/RpP6A07580qoWp0lE5zONg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Calidad - Documentos_RT_MAP - Todos los documentos - Google Chro*' /&gt;" SearchSteps="Selector, Image, CV" SelectionStrategy="AA" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <uix:NCheckState DisplayName="Check App State - upload file" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="426,246" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable CVScreenId="968b88af-4b7e-4542-9989-60067e73ed52" ContentHash="SSRmEA7540-QCJv93vq5Wg" DesignTimeRectangle="252, 465, 463, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='Nombre*:' aastate='enfocable' cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd aaname='Nombre*:' aastate='enfocable' cls='Edit' /&gt;" Guid="5aef6ad6-ae6c-4b94-b0b4-aee9376e8bcd" InformativeScreenshot="33521e6f52763c8ac6d2698c9fa777a1.png" Reference="vPy7nYopc0-jm1pCYXfcew/Ggaq2nVJ8EunnaKJ_wSPVA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - upload file" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1094,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[string.Format(&quot;{0}[k(enter)]&quot;, in_PdfFilePath)]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="968b88af-4b7e-4542-9989-60067e73ed52" ContentHash="SSRmEA7540-QCJv93vq5Wg" DesignTimeRectangle="252, 465, 463, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='Nombre*:' aastate='enfocable' cls='Edit' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd aaname='Nombre*:' aastate='enfocable' cls='Edit' /&gt;" Guid="5aef6ad6-ae6c-4b94-b0b4-aee9376e8bcd" InformativeScreenshot="33521e6f52763c8ac6d2698c9fa777a1.png" Reference="vPy7nYopc0-jm1pCYXfcew/Ggaq2nVJ8EunnaKJ_wSPVA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Complete" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Pick DisplayName="Pick - loaded document" sap:VirtualizedContainerService.HintSize="1094,3348" sap2010:WorkflowViewState.IdRef="Pick_1">
+              <PickBranch DisplayName="PickBranch - file doesn exist in share point" sap:VirtualizedContainerService.HintSize="576,3278" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+                <PickBranch.Trigger>
+                  <uix:NCheckElement Result="{x:Null}" DelayBefore="0" DisplayName="Check Element - elelmet loaded" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,111" sap2010:WorkflowViewState.IdRef="NCheckElement_2" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutLong&quot;))]" Version="V5">
+                    <uix:NCheckElement.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" ContentHash="0_fN2khcmk2ydArEXr0-yw" DesignTimeRectangle="1427, 351, 285, 24" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='OperationMonitor-itemName' parentid='appRoot' tag='DIV' data-bind='bindableHtml: title' visibleinnertext='Se cargó 1 elemento en Documentos_RT_MAP' /&gt;" Guid="8b26bb5b-0a81-4e07-8956-4e2858595de2" InformativeScreenshot="f7b637202d28d014ba62154f8db180e3.png" Reference="vPy7nYopc0-jm1pCYXfcew/vo6b4YmVv0e5HxnEsuSIOA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NCheckElement.Target>
+                  </uix:NCheckElement>
+                </PickBranch.Trigger>
+                <Sequence sap:VirtualizedContainerService.HintSize="486,2966" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Check - uploaded file" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" ContentHash="mcKkEgwbiEaub1RggaO4Eg" DesignTimeRectangle="248, 448, 40, 40" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='checkbox' tag='DIV' class='ms-DetailsRow-check check*' data-automationid='DetailsRowCheck' role='element' uipath-html-title='{0}' /&gt;&quot;, Path.GetFileName(in_PdfFilePath))]" Guid="f4183476-3b52-4c15-97e3-177bd58a5dc9" InformativeScreenshot="4bdf4b41fcae28f16fa3b5300d26e2a0.png" Reference="vPy7nYopc0-jm1pCYXfcew/japsGUYbVUi2Io_lsGRQ3w" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope - update details" sap:VirtualizedContainerService.HintSize="452,1088" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:00.5000000">
+                    <ui:RetryScope.ActivityBody>
+                      <ActivityAction>
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,685" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click - file details" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="17a505eb-915c-47c8-ab10-4bdd681d1853" ContentHash="J218NX5ZUUyliwM9Xc8TpA" DesignTimeRectangle="1860, 294, 44, 39" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='CommandBarItem-link' parentid='appRoot' tag='DIV' data-automationid='link' visibleinnertext='Detalles' /&gt;" Guid="be51d1b7-ef66-42e5-ac27-082e84f5156b" InformativeScreenshot="339d79e73273bcba049f5f1ab332052b.png" Reference="vPy7nYopc0-jm1pCYXfcew/X6-_KPM8o0epoerlGRp1Sg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayBefore="1" DisplayName="Click - edit all" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="4189e688-e858-4695-b18f-55f41f30e68b" ContentHash="tgy3xP_BVUOdc3181_G7zQ" CvTextArea="1834, 592, 60, 12" CvTextArgument="Editar todo" CvType="Text" DesignTimeRectangle="1834, 585, 59, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='spo-Properties-sectionHeader' tag='A' data-bind='click: onEditClick, clickBubble: *, text: clientFormEditLink' visibleinnertext='Editar todo' /&gt;" Guid="5bc5937f-2d63-4d7c-9e6d-e02e5bbea925" InformativeScreenshot="1b44b5d47023f55676a1ad81df92974c.png" Reference="vPy7nYopc0-jm1pCYXfcew/JDtLaPLKmk2xTUjORN6wsA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - pedido venta ampo" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[TransactionItem(&quot;Columna1&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="323bfc78-5b66-4cb2-bff8-32811a24b5f5" ContentHash="VfuJZLqWG0GYh6fcOUmAtQ" DesignTimeRectangle="1328, 646, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='PedidoVentaAmpo' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="f6dc3424-1b77-4174-9b5b-040889a0cce6" InformativeScreenshot="f79b24971d68d275550cef2ac0a2b092.png" Reference="vPy7nYopc0-jm1pCYXfcew/0sqB5amhkkGWaok1_GjPbg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:RetryScope.ActivityBody>
+                    <ui:RetryScope.Condition>
+                      <ActivityFunc x:TypeArguments="x:Boolean">
+                        <uix:NCheckState DisplayName="Check App State - pedido venta ampo" EnableIfExists="False" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="426,246" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="3" Version="V5">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="323bfc78-5b66-4cb2-bff8-32811a24b5f5" ContentHash="bSsy5FVMX0-V_664v7mlEw" DesignTimeRectangle="1328, 646, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='PedidoVentaAmpo' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="f6dc3424-1b77-4174-9b5b-040889a0cce6" InformativeScreenshot="f79b24971d68d275550cef2ac0a2b092.png" Reference="vPy7nYopc0-jm1pCYXfcew/0sqB5amhkkGWaok1_GjPbg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                      </ActivityFunc>
+                    </ui:RetryScope.Condition>
+                  </ui:RetryScope>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - pedido PV ampo" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[TransactionItem(&quot;Columna2&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="66a39372-edae-4668-b728-83b44a9b0b34" ContentHash="CB51oFtT9UmpL5L8qEZR0g" DesignTimeRectangle="1328, 727, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='PosicionPVAmpo' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="1673c524-f267-4cb9-9fe3-c708bdb34c63" InformativeScreenshot="f02c932d2f564cf6cc727557a7ea930c.png" Reference="vPy7nYopc0-jm1pCYXfcew/Q0B4_oG08UCMTW5pSkWHGw" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - comp type" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[TransactionItem(&quot;Columna4&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="66a39372-edae-4668-b728-83b44a9b0b34" ContentHash="d-brhuj0Okiq6v_keY66GQ" DesignTimeRectangle="1328, 808, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Comp_type' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="c764d83d-108d-4ada-9ed2-cc450414fbf8" InformativeScreenshot="1bcd7080d4e379e022d41c00dfc8f321.png" Reference="vPy7nYopc0-jm1pCYXfcew/87LlErpNfkqn6NSTEsDWcA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - comp type field" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="065a768e-07b7-4c60-b8e1-0f025d2863f7" DesignTimeRectangle="1328, 868, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Comp_type' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="60ff89f4-ef3d-4dab-a6d3-da4017a1b3e7" InformativeScreenshot="e34a083519011525b93c92032a3f1fbd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts - tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Shortcuts="[d(hk)][k(Tab)][u(hk)]" Version="V5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NKeyboardShortcuts>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts - down" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Shortcuts="[d(hk)][k(Down)][u(hk)]" Version="V5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NKeyboardShortcuts>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts - page down" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="HardwareEvents" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Shortcuts="[d(hk)][k(PgDn)][u(hk)]" Version="V5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NKeyboardShortcuts>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - comp type desc option" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="4fc51b14-f96c-4666-b7d9-84796458f1f2" ContentHash="cEicOKZZDUqp3-xfF4GidQ" DesignTimeRectangle="1328, 961, 527, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl class='od-ContextualMenu-link' parentid='appRoot' tag='A' title='Editar elemento' visibleinnertext='{0}' /&gt;&quot;,TransactionItem(&quot;Columna3&quot;).ToString.Trim)]" Guid="b5ba7528-bf89-4075-87b9-034082d3c816" InformativeScreenshot="bad3ea59fd6d8957b85a9bb3a92e16df.png" Reference="vPy7nYopc0-jm1pCYXfcew/SQG8h5-NQUOk1iQ-tXD8ZA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - guardar button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="2bc3d444-f653-45fb-b4c7-5c63e8bed5c5" ContentHash="ixQMPMvAw06FcG3nHrpqNQ" CvElementArea="1324, 952, 96, 35" CvTextArea="1344, 962, 55, 13" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="1325, 953, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Guardar' parentid='appRoot' tag='BUTTON' class='od-Dialog-action od-Button od-Button--primary' data-automationid='clientFormSaveButton' check:innerText='Guardar' /&gt;" Guid="f8b06f4b-4e83-4a73-b5a2-e6ee83cbc6bb" InformativeScreenshot="6da70d2d4545636838038dd25565b7a3.png" Reference="vPy7nYopc0-jm1pCYXfcew/ka3VkaqXoEiJcfUG24_L8Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Check - uploaded file" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" ContentHash="Rv3X-neNrU-NxCpDSGqx8w" DesignTimeRectangle="248, 448, 40, 40" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='checkbox' tag='DIV' class='ms-DetailsRow-check check*' data-automationid='DetailsRowCheck' role='element' uipath-html-title='{0}' /&gt;&quot;, Path.GetFileName(in_PdfFilePath))]" Guid="f4183476-3b52-4c15-97e3-177bd58a5dc9" InformativeScreenshot="4bdf4b41fcae28f16fa3b5300d26e2a0.png" Reference="vPy7nYopc0-jm1pCYXfcew/japsGUYbVUi2Io_lsGRQ3w" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click - file details uncheck" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,185" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="17a505eb-915c-47c8-ab10-4bdd681d1853" ContentHash="J218NX5ZUUyliwM9Xc8TpA" DesignTimeRectangle="1860, 294, 44, 39" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='CommandBarItem-link' parentid='appRoot' tag='DIV' data-automationid='link' visibleinnertext='Detalles' /&gt;" Guid="be51d1b7-ef66-42e5-ac27-082e84f5156b" InformativeScreenshot="339d79e73273bcba049f5f1ab332052b.png" Reference="vPy7nYopc0-jm1pCYXfcew/X6-_KPM8o0epoerlGRp1Sg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </PickBranch>
+              <PickBranch DisplayName="PickBranch - file doesn exist in share point" sap:VirtualizedContainerService.HintSize="424,3278" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                <PickBranch.Trigger>
+                  <uix:NCheckElement Result="{x:Null}" DelayBefore="0" DisplayName="Check Element - elelmet no loaded" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="334,111" sap2010:WorkflowViewState.IdRef="NCheckElement_1" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutLong&quot;)) + 1]" Version="V5">
+                    <uix:NCheckElement.Target>
+                      <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="bcc0b4a1-a557-4f42-8d43-bb3d954a86eb" ContentHash="O_y6BPUHtEK1S4eqioUhTQ" CvTextArea="1556, 360, 149, 13" CvTextArgument="No se cargó 1 elemento" CvType="Text" DesignTimeRectangle="1557, 353, 272, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='OperationMonitor-itemName' parentid='appRoot' tag='DIV' data-bind='bindableHtml: title' visibleinnertext='No se cargó 1 elemento' /&gt;" Guid="ccb890ca-8023-44c2-87c2-11c0d7fe9461" InformativeScreenshot="d678df0c6a671ab756578846a531843d.png" Reference="vPy7nYopc0-jm1pCYXfcew/bBlOmSRmIEWv9eVhxPjyBg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete" />
+                    </uix:NCheckElement.Target>
+                  </uix:NCheckElement>
+                </PickBranch.Trigger>
+                <Throw DisplayName="Throw - BE file already loaded" Exception="[New BusinessRuleException(&quot;El archivo &quot;+Path.GetFileName(in_PdfFilePath)+&quot; ya existe en el share point&quot;)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_1" />
+              </PickBranch>
+            </Pick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1013" BrowserType="Chrome" ContentHash="q8q_gG2KpUeWIuPTC2BYUw" IconBase64="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" InformativeScreenshot="887e2e8b67297a4b7c3334aaca26bb16.jpg" Reference="vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Url>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message - end" sap:VirtualizedContainerService.HintSize="1130,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finaliza cargar PDF en Share Point&quot;]" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - fijar filtros",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "NN-m3h7G-0eLZSw7R2bRKw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/NN-m3h7G-0eLZSw7R2bRKw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg",
+  "Created": "2026-01-30T03:37:05.3134371Z",
+  "Updated": "2026-01-30T03:37:05.3134371Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

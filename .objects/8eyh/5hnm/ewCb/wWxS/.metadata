@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click - row data",
+  "Type": "Element",
+  "Id": "wWxS3Tg0bk6wTo8ZQePBBg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/wWxS3Tg0bk6wTo8ZQePBBg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg",
+  "Created": "2026-01-31T02:19:11.363514Z",
+  "Updated": "2026-01-31T02:19:11.363514Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

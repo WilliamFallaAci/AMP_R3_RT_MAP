@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZOI2CBznsEmBSWjNgSmwvQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="45, 91, 83, 22" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/btnSPOP-OPTION*' text='Sí' type='GuiButton' /&gt;" Guid="677c3aa1-6463-4a13-b410-cc0db8722092" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Salir del sistema' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="d1b27deeb74b29c002e630663375d1c5.png" xmlns="">0Isi1zt5yckaenpd8ePHA9Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="YCjXIDOm10mkIV_CXmTIIg" Reference="vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1936, 1003" ContentHash="ObtP7nPOCk-Jub5iCMM74w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVFhHY/j//z/jQGIGdAF641EHjDpg1AEMTjWr2Z2qVx8cEFyzppDBqXoNp1PNmv8DgNc6164RHCgHgCwXhkQB/R0AtxzsgI3dyvaO1av/O1avohJe/d+pBoQxLMawHOyA39tEvr7drPifGvjkEov//tXToI4gbDnYAf93ivynBr69Qu1/QEHNf7vSRdgcgNVyqjng7krV/765Nf9tixdgi4L1oNSObjHVHACy3Du39r9dyUJsPl/vUrcWp+UUOwDV8lXIFv8lxnKwA95vkCjt6Y79390ZSSKO+u9X0EiR5WAHWOXO4LSvWPbfvnwpydihcjl6sIMtd67DHefomJoFEdTnxFtOTQeQ7HNqO4DoOEfHlFfHNWtmkms52AHoAvTGow4YdcCoAwbcAQDpkwHpwSZt7QAAAABJRU5ErkJggg==" Reference="vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP Logon*' /&gt;" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.FilePath>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.FilePath>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="06e8a274388e2d778b550ca4d9d06ed1.png" xmlns="">0aipRUD92X0qtXPHqib2MOw</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

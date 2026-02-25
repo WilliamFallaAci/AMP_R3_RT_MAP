@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - print button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "xMb2E_P8Vk6hPOnUpEGYhQ",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/xMb2E_P8Vk6hPOnUpEGYhQ",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/mJi_u3L77EegnZZB7AFzhA",
+  "Created": "2026-01-31T02:35:13.3257312Z",
+  "Updated": "2026-01-31T02:35:13.3257312Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ixQMPMvAw06FcG3nHrpqNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="2bc3d444-f653-45fb-b4c7-5c63e8bed5c5" CvElementArea="1324, 952, 96, 35" CvTextArea="1344, 962, 55, 13" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="1325, 953, 93, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Guardar' parentid='appRoot' tag='BUTTON' class='od-Dialog-action od-Button od-Button--primary' data-automationid='clientFormSaveButton' check:innerText='Guardar' /&gt;" Guid="f8b06f4b-4e83-4a73-b5a2-e6ee83cbc6bb" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="6da70d2d4545636838038dd25565b7a3.png" xmlns="">0QgvQ2bRMQkaHw57gtggYpQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

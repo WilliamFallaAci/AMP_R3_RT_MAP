@@ -1,0 +1,14 @@
+﻿{
+  "Name": "TextField Nombre de usu…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "mEq_myOmRUiV6m8mTs06WA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/mEq_myOmRUiV6m8mTs06WA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "Created": "2026-01-30T00:08:54.8271268Z",
+  "Updated": "2026-01-30T00:08:54.8271268Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

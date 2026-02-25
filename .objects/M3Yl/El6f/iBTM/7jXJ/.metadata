@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into - contraseña",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "7jXJ4cax5EqT_kOD9-x8hw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/7jXJ4cax5EqT_kOD9-x8hw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/iBTMRbnlfU2N8b7pDqUh0A",
+  "Created": "2026-02-01T21:09:27.6939733Z",
+  "Updated": "2026-02-01T21:09:27.6939733Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "@09@ icon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "yZ6Cx4WTzU64xAqGJGP8Xg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/yZ6Cx4WTzU64xAqGJGP8Xg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg",
+  "Created": "2026-01-30T04:30:03.8800373Z",
+  "Updated": "2026-01-30T04:38:32.1644029Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

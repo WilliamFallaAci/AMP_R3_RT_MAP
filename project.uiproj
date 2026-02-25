@@ -1,0 +1,6 @@
+{
+  "Name": "AMP_R3_RT_MAP",
+  "ProjectType": "Process",
+  "Description": "Gestionar las RTs en SAP para genrar los documentos",
+  "MainFile": "Main.xaml"
+}

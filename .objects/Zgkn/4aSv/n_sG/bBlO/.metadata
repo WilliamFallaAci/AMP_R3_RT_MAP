@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Check Element - elelmet no loaded",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bBlOmSRmIEWv9eVhxPjyBg",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/bBlOmSRmIEWv9eVhxPjyBg",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/n_sGpZU-F0K7li0cfSUbGw",
+  "Created": "2026-02-01T23:19:52.1692727Z",
+  "Updated": "2026-02-01T23:22:05.6375399Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

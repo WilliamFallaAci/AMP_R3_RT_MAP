@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O_y6BPUHtEK1S4eqioUhTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="bcc0b4a1-a557-4f42-8d43-bb3d954a86eb" CvTextArea="1556, 360, 149, 13" CvTextArgument="No se cargó 1 elemento" CvType="Text" DesignTimeRectangle="1557, 353, 272, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='OperationMonitor-itemName' parentid='appRoot' tag='DIV' data-bind='bindableHtml: title' visibleinnertext='No se cargó 1 elemento' /&gt;" Guid="ccb890ca-8023-44c2-87c2-11c0d7fe9461" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="d678df0c6a671ab756578846a531843d.png" xmlns="">0HzhLEnrTWUyTgP4aIBityg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

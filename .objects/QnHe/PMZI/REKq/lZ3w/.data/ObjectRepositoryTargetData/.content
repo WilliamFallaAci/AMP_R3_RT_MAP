@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="343ntRWEo0-lGyV2WeH5IA" Reference="vPy7nYopc0-jm1pCYXfcew/lZ3wAM6vZUu3In9pQprwXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="12f079e1-722e-4d3d-bc59-b6e3aa471f89" DesignTimeRectangle="4, 26, 434, 112" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/sub?*[*]/sub?*?*[*]' type='GuiSimpleContainer' /&gt;" Guid="cd0f33c0-95d9-4e1e-afe6-97594d9ce692" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Mensajes sistema' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="3d28dd715e386a21d0a096553c2e0921.png" xmlns="">061r8fRbz3E-OK8Y2keMIrw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

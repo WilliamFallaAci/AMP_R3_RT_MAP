@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7sPjhaNmXkezTu7VYFRDSA" Reference="vPy7nYopc0-jm1pCYXfcew/ONCGWwDyQkalNwQZKyEdHg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="2ba515c5-756a-4393-a3f7-8d2355f83546" DesignTimeRectangle="882, 287, 109, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Iniciar sesión' role='dialog' /&gt;&lt;ctrl name='Iniciar sesión' role='push button' /&gt;" Guid="c16335dc-922c-409c-8d32-f438687849e6" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllIte*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="60bb2f2020e99a1e8cb8f56e027e581e.png" xmlns="">051Dq-4f4JUW1j5GffxcNFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

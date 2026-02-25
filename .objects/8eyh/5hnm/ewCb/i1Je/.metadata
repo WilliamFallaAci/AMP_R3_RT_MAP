@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - execute filter",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "i1JeKRx7E0WQL-HxVbdJOA",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/i1JeKRx7E0WQL-HxVbdJOA",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/ewCbUJmUoEqwN9SM-E2XSg",
+  "Created": "2026-01-30T03:46:54.9233498Z",
+  "Updated": "2026-01-30T03:46:54.9233498Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

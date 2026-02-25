@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click - cont button",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "0CLxmi7fjkeYFtHRE0QBfw",
+  "Reference": "vPy7nYopc0-jm1pCYXfcew/0CLxmi7fjkeYFtHRE0QBfw",
+  "ParentRef": "vPy7nYopc0-jm1pCYXfcew/REKqe_PRgE6EKdi5h0fCjw",
+  "Created": "2026-01-31T00:56:19.434937Z",
+  "Updated": "2026-01-31T00:56:19.434937Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

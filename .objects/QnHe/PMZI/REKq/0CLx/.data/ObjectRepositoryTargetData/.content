@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GDNTIj0syU2GEVzujgCd4A" Reference="vPy7nYopc0-jm1pCYXfcew/0CLxmi7fjkeYFtHRE0QBfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="cbc294f7-ee8b-4668-b122-f18f6f0c20d2" DesignTimeRectangle="411, 223, 20, 20" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='tbar[*]/btn[*]' tooltip='Cont.*(F12)' type='GuiButton' /&gt;" Guid="85f6dae7-2e11-45b4-8ae4-5bf02945217a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVEhLtZVNSwJBAIb9If2LjkHn/kJ0CoSCik4eIqggyk5RYBhZShbYIQwPQYe8hZSH8mBUBBYKKkbqYlZ+7RvvkGbOjh9bHl52Z3be55mZy1resxn0M5bWif9OQ/CRPsCecxFW6+SfQgZZkmBrYx4nR3bopSegHDcVdskgSxLMTE9BS3ihl5NA7c1U2CWDLKUAlRRQvDCXSqoLQTUjFw1yHbnB6MYQJjZnxbuYr2Y6C/RKQoK1hsBh2wjswUERSjjPbmdB6QEonCvTDJ87HRBPnoTf2G0ryFNQDAFawDBGcI7FFWkB0SVDKcjF96EXgqLAY4ud5XwiKng4HG6sYZeMjgLC6/c7tjreFbwnAXfeCmsdi2tpgncleH32QC+cGe5Y2nnWI4VdMpSCl5gbuuYXi40k7eBCoPkFQylIP7pQ+xYwhNUlneAMu2QoBcn7bdTyP4JmibhzA+gvQd4vGEpBPOqQBL2EXTKUglhkHdXcsVTsNuySoRTcXq6hmPbhM+0yFXbJMBTsOBbgdtoQDS3j7mrFVNglgyxJUMocwru7JP0Cew0ZZEmCfqXvgi/E4IaWMw5UogAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Mensajes sistema' idx='*' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="220998ff9c7acdea1788dee194222011.png" xmlns="">0E8xAG9U-Jk2AeALU28ikmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

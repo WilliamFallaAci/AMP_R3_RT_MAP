@@ -1,0 +1,206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SAP_AddRxFilters" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SAP_AddRxFilters_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SAP_AddRxFilters" sap:VirtualizedContainerService.HintSize="1281,1560" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message - start" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Inicia ingresar filtros RX en SAP Logon&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Rx screen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1196" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="cde2236b-20ba-4342-8d4e-60be36346105" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do - RX" sap:VirtualizedContainerService.HintSize="450,1045" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click - refresh screen" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cde2236b-20ba-4342-8d4e-60be36346105" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="39, 203, 237, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/radP_BUS' text='Buscar Informe' tooltip='Indicador de una posición' type='GuiRadioButton' /&gt;" Guid="71d71064-980d-4eae-b1ab-222b1878394e" InformativeScreenshot="d6f44251e7aa1ac438b21cc4235735a4.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DisplayName="Click - interno subcontratación" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cde2236b-20ba-4342-8d4e-60be36346105" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="6f7c4c74-323d-4a07-80a3-538aa55dce5a" ContentHash="p2O4REjQGkOyEnmEdNX9sA" CvElementArea="39, 227, 17, 16" CvTextArea="58, 228, 133, 15" CvTextArgument="Interno/Subcontratación" CvType="RadioButton" DesignTimeRectangle="39, 225, 237, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/radP_SUB' text='Interno/Subcontratación' type='GuiRadioButton' /&gt;" Guid="765e8250-f3dd-49b7-8daf-8cfcf10cddd3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPEAAAAYCAYAAAArgBtDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQxSURBVHhe7ZlRTxNBEMfvMxHCd2nCU78HidWnvqiIiIbQaAgoJB4KGjFUCy9IDBpFRGxIBYXwbhoUCIyZ5Xqdnd29O1pO2ThNfrns7uzs7N7+b/auQXO/AYIg+EvAKwRB8AsRsSB4johYEDxHRCwIniMiFgTPSRTxzsZ7CKcm4M7QIFwtldQVy1jPbQVB+Dc4RVybn4VrpSsw93QGVt+uwPb2lrpiGeuxnffxixqUe3ugvMzrz8HyAPT1DsAar/9vwDUMIOivWNqEv4VVxM/DaRh/MAb1+gY0mz/h6Og3HB8fqyuWsR7b0U7rO1GAIAgiChBafLe5ABF1AxcgluPYAwiyiJP7yJVu1qubvhGWua6VekTAlwBDxI31Vbh18zrs7m7D4eEvOD09BfrDMtbv7e3A0OANZa/5UGJIEzByARurG/CBE2/AChSDAIoT7fawP8McLBs7P7pZr276CpcdQ8RPph/CwsILODhoGgJu/bAe26vVeQinJnWnVMTRJi/3tzJcayNFxzBr5qNtZONpvgoQOn3TOBxtSqREtEkPHi5UWk6Lgc+T9rPF5vTnWC+2JmXMjMSmr1Rz9g2ttglx83mfK34hTwwR3xsZhq9fPqvjc9IP2+ubG8pe88FFTDMcZj9NrOZNRnHFG4rac1+8bPh2tSGYealozzKxvpHJOEkiJjGo4yWxxbmYx82E2FLnZH9Q0ROE3kYfAuZa220dccfz7jR+IS8MEQ/fHlRH6ZOTZBFjO9qhveaDi9glAOvGsokrskn0ZRGXIVoylnaUpnG3s4/2sMg6Dp27MRdL/9guyxwt68XtNai9pa/TNiVuY8ys8Qt5YYj4/tioyrBZMzHaaz7oRuY3McumpMc+eiRL9MXKRgbQswdmTGvWbaE+0GUYl7dRAdB14L5dsXF/WdaLiUSdBvja2fq6bF1xt8bqOH4hLwwRv5ybgaXaq0zvxGiH9poPugn4TUzblK4sYPRNKRsbkWZi27gctjGpLz4OjyFNxEZ91kxmiZvbq4dPy3dKJnbZGvGxsYz2rPELeWGI+PvmBxi9OwI/dr4lfp3GdrRDe80H38gJN1X7uETqaJaMvxKn+DI3vOPdjPeL2rXMrOZAN3VbAOp90eFLf5c8i8E4tp8nNot/bb1Yu/aXjyVu2tdt64g7Hqvz+IV8MESMvKktwLPZEBqNuvV/YqzHdrTT+qqne+t41v6C7LypavNE9kyAsR+60XjftDKNhcbIN2j0Ycs4Wkbt9NhZLJFxtDFs/y0nzMUWm20OvEzH4u10Hr0FKNLsy/sm2dripmN1Gr+QC1YRI++Xl2C8UoHF11X49PGdEi5esYz12M77+ADPSILgO04RI/tb67CyWIX5uRl4/GhSXbGM9dzWDxLeuQXBUxJFLAjC5UdELAieIyIWBM8REQuC54iIBcFz/gATqVJ9GMmkQgAAAABJRU5ErkJggg==" InformativeScreenshot="be0b1b2163d10af200286992afc338c9.png" Reference="vPy7nYopc0-jm1pCYXfcew/gGlLg04a4UGE1PEKmxFN7Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - documento ventas" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="cde2236b-20ba-4342-8d4e-60be36346105" Text="[TransactionItem(&quot;Columna1&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="794ddd98-249d-43bb-bf47-86e6fe14616c" ContentHash="duW2bEvOSECKaviFTzEJTw" DesignTimeRectangle="263, 313, 76, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/ctxt*_VBELN*-LOW' tooltip='Documento de ventas' type='GuiCTextField' /&gt;" Guid="0ae737c6-6904-41e2-8579-0d085b6a6118" InformativeScreenshot="11f680bc3b48360d51020ce52512178e.png" Reference="vPy7nYopc0-jm1pCYXfcew/cRUid0s9P0mp0BHpnYnMlQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - posición" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="cde2236b-20ba-4342-8d4e-60be36346105" Text="[TransactionItem(&quot;Columna2&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="d3506308-4a8b-4154-bcc5-c3f20153c9c3" DesignTimeRectangle="263, 335, 48, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='usr/ctxt*_POSNR*-LOW' tooltip='Posición documento ventas' type='GuiCTextField' /&gt;" Guid="73bbd87e-27f4-490d-b8de-c4110d64a7b6" InformativeScreenshot="0ab729bef924a57105bf5bd687ab1e20.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts - execute" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="cde2236b-20ba-4342-8d4e-60be36346105" Shortcuts="[d(hk)][k(F8)][u(hk)]" Timeout="[CDbl(Config(&quot;SAP_TimeoutMedium&quot;))]" Version="V5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NKeyboardShortcuts>
+            <uix:NCheckState DisplayName="Check App State - data does not exist" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="cde2236b-20ba-4342-8d4e-60be36346105" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw - BE data does not exist" Exception="[New BusinessRuleException(&quot;No Existen datos para la selección&quot;)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable ContentHash="njh8-A77zEaAMvVJL3QKxQ" DesignTimeRectangle="22, 976, 1892, 29" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;sap id='sbar' text='No Existen datos para la selección' type='GuiStatusbar' /&gt;" Guid="5e995be6-4afd-49b7-8a21-70b5721c921b" InformativeScreenshot="26b9435a82b4921bbb8e1b2245102063.png" Reference="vPy7nYopc0-jm1pCYXfcew/zcSyl4cGSkOOawUXguJQCg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1008" ContentHash="UeNXAxbzmEq2VqIIQq804w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVFhHY/j//z/jQGIGdAF641EHjDpg1AEMTjWr2Z2qVx8cEFyzppDBqXoNp1PNmv8DgNc6164RHCgHgCwXhkQB/R0AtxzsgEOnLlo6Vq/+71i9ikp49X+nGhDGsBjDcrAD3n76/vn+i4//qYH3nr/3368B5gjCloMd8P7Lz//UwGdvPv7vVzH7v13pImwOwGo51Rxw4fbT/96lM/7bFi/AFgXrQakd3WKqOeD87af/PYun/bcrWYjN5+td6tbitJxiB4B87lkyHWr5KmSL/xJjOdgBD56/LW1bsu9/y6JdJOLd/33KZ1NkOdgBVrkzOO0rlv23L19KMnaoXI4e7GDLnetwxzk6pmZBBPU58ZZT0wEk+5zaDiA6ztEx5dVxzZqZ5FoOdgC6AL3xqANGHTDqgAF3AAD5AWfDouj2iwAAAABJRU5ErkJggg==" InformativeScreenshot="50986baee5a99bbab4e0887ae764904c.png" Reference="vPy7nYopc0-jm1pCYXfcew/uh7Ftm3nB0OJoTJFB9koPg" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Rx' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.FilePath>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.FilePath>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message - end" sap:VirtualizedContainerService.HintSize="452,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finaliza ingresar filtros RX en SAP Logon&quot;]" />
+  </Sequence>
+</Activity>
