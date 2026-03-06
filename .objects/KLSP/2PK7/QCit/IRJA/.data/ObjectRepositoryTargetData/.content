@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="4IydFXRnkkavSniOui_8kQ" Reference="vPy7nYopc0-jm1pCYXfcew/IRJAI2QkQUyVoykerxNKrg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="DqHAZrejakunbT5mQUtW2A" Reference="vPy7nYopc0-jm1pCYXfcew/IRJAI2QkQUyVoykerxNKrg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="60, 46, 288, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Confirmar Guardar como' role='pane' /&gt;&lt;ctrl name='*.pdf ya existe.  *Desea reemplazarlo*' role='text' /&gt;" Guid="a3ea79fa-f0a3-4323-8a70-50d0877297b6" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Confirmar Guardar como' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
-      <imageRef attrName="InformativeScreenshot" originalValue="59ed7a071d702785446ed9052c144488.png" xmlns="">0-RnJCyNizkqj1QV-YczdjA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="60, 46, 288, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Confirmar Guardar como' role='pane' /&gt;&lt;ctrl role='text' text='*pdf ya existe*reemplazarlo*' /&gt;" Guid="a3ea79fa-f0a3-4323-8a70-50d0877297b6" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Confirmar Guardar como' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="59ed7a071d702785446ed9052c144488.png" xmlns="">02ForAdyxHEC60tu-6yB7kg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">CheckState</x:String>
   </ObjectRepositoryTargetData.Data>

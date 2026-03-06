@@ -106,7 +106,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SAP_PrintRtMap" sap:VirtualizedContainerService.HintSize="1165,2774" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SAP_PrintRtMap" sap:VirtualizedContainerService.HintSize="1281,2774" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -272,8 +272,14 @@
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>
-                <uix:TargetAnchorable ContentHash="XlOaBF4oNU2j-g50ZhLkeQ" DesignTimeRectangle="60, 46, 288, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Confirmar Guardar como' role='pane' /&gt;&lt;ctrl name='*.pdf ya existe.  *Desea reemplazarlo*' role='text' /&gt;" Guid="a3ea79fa-f0a3-4323-8a70-50d0877297b6" InformativeScreenshot="59ed7a071d702785446ed9052c144488.png" Reference="vPy7nYopc0-jm1pCYXfcew/IRJAI2QkQUyVoykerxNKrg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Confirmar Guardar como' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                <uix:TargetAnchorable ContentHash="XlOaBF4oNU2j-g50ZhLkeQ" DesignTimeRectangle="60, 46, 288, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Confirmar Guardar como' role='pane' /&gt;&lt;ctrl role='text' text='*pdf ya existe*reemplazarlo*' /&gt;" Guid="a3ea79fa-f0a3-4323-8a70-50d0877297b6" InformativeScreenshot="59ed7a071d702785446ed9052c144488.png" Reference="vPy7nYopc0-jm1pCYXfcew/IRJAI2QkQUyVoykerxNKrg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Confirmar Guardar como' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
           </Sequence>
         </ActivityAction>
