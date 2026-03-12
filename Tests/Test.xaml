@@ -88,44 +88,76 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>Microsoft.Office.Interop.Excel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="1078,814.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="1072,1092" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="TransactionDataAux">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="New System.Data.DataTable" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="TransactionDataAux" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[TransactionDataAux]" DisplayName="Read Range Workbook - initial input file" sap:VirtualizedContainerService.HintSize="450,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="TestData" WorkbookPath="C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA_Copia.xlsx" />
-    <Assign DisplayName="Assign - retrieve data do not loaded" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Assign_1">
-      <Assign.To>
-        <OutArgument x:TypeArguments="sd:DataTable">[TransactionDataAux]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[TransactionDataAux.AsEnumerable.Where(Function (row) row("Columna5").ToString.Trim.ToLower.Contains("cargar") OrElse
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[TransactionDataAux]" DisplayName="Read Range Workbook - initial input file" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="TestData" WorkbookPath="C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA - copia.xlsx" />
+    <If Condition="[TransactionDataAux.AsEnumerable.Any(Function (row) row(&quot;Columna5&quot;).ToString.Trim.ToLower.Contains(&quot;cargar&quot;) OrElse&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;row(&quot;Columna5&quot;).ToString.Trim.ToLower.Contains(&quot;error&quot;) OrElse&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;row(&quot;Columna5&quot;).ToString.Trim.ToLower.Contains(&quot;no cargado&quot;) OrElse&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;String.IsNullOrEmpty(row(&quot;Columna5&quot;).ToString.Trim))]" DisplayName="If - does exist data loaded" sap:VirtualizedContainerService.HintSize="452,949" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,571" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign - retrieve data do not loaded" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[TransactionDataAux]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[TransactionDataAux.AsEnumerable.Where(Function (row) row("Columna5").ToString.Trim.ToLower.Contains("cargar") OrElse
 				row("Columna5").ToString.Trim.ToLower.Contains("error") OrElse
 				row("Columna5").ToString.Trim.ToLower.Contains("no cargado") OrElse
 				String.IsNullOrEmpty(row("Columna5").ToString.Trim)).
 		Select(Function (row) row).CopyToDataTable]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim excelApp As Microsoft.Office.Interop.Excel.Application = Nothing&#xD;&#xA;Dim workbook As Microsoft.Office.Interop.Excel.Workbook = Nothing&#xD;&#xA;Dim worksheet As Microsoft.Office.Interop.Excel.Worksheet = Nothing&#xD;&#xA;Dim usedRange As Microsoft.Office.Interop.Excel.Range = Nothing&#xD;&#xA;Dim lastRow As Integer&#xD;&#xA;&#xD;&#xA;Try&#xD;&#xA;    ' Inicializar Excel&#xD;&#xA;    excelApp = New Microsoft.Office.Interop.Excel.Application()&#xD;&#xA;    excelApp.Visible = False&#xD;&#xA;    excelApp.DisplayAlerts = False&#xD;&#xA;&#xD;&#xA;    ' Abrir el libro&#xD;&#xA;    workbook = excelApp.Workbooks.Open(in_InitialInpuPath)&#xD;&#xA;    &#xD;&#xA;    ' Seleccionar la hoja por nombre&#xD;&#xA;    worksheet = CType(workbook.Sheets(in_InputSheetName), Microsoft.Office.Interop.Excel.Worksheet)&#xD;&#xA;&#xD;&#xA;    ' Obtener la última fila usada&#xD;&#xA;    usedRange = worksheet.UsedRange&#xD;&#xA;    lastRow = usedRange.Rows.Count&#xD;&#xA;&#xD;&#xA;    ' Si hay más de una fila (es decir, hay datos además del header)&#xD;&#xA;    If lastRow &gt; 1 Then&#xD;&#xA;        ' Limpiar desde la fila 2 hasta la última fila usada&#xD;&#xA;        Dim rangeToClear As Microsoft.Office.Interop.Excel.Range&#xD;&#xA;        rangeToClear = worksheet.Range(&quot;A2&quot;, worksheet.Cells(lastRow, usedRange.Columns.Count))&#xD;&#xA;        rangeToClear.Clear()&#xD;&#xA;        System.Runtime.InteropServices.Marshal.ReleaseComObject(rangeToClear)&#xD;&#xA;    End If&#xD;&#xA;&#xD;&#xA;    ' Guardar y cerrar&#xD;&#xA;    workbook.Save()&#xD;&#xA;    workbook.Close()&#xD;&#xA;&#xD;&#xA;Catch ex As Exception&#xD;&#xA;    Throw ex&#xD;&#xA;&#xD;&#xA;Finally&#xD;&#xA;    ' Liberar objetos en orden correcto&#xD;&#xA;    If Not usedRange Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(usedRange)&#xD;&#xA;    If Not worksheet Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(worksheet)&#xD;&#xA;    If Not workbook Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(workbook)&#xD;&#xA;&#xD;&#xA;    If Not excelApp Is Nothing Then&#xD;&#xA;        excelApp.Quit()&#xD;&#xA;        System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp)&#xD;&#xA;    End If&#xD;&#xA;End Try" DisplayName="Invoke Code - clear input sheet" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
-      <ui:InvokeCode.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_InitialInpuPath">
-          <Literal x:TypeArguments="x:String">C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA_Copia.xlsx</Literal>
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_InputSheetName">
-          <Literal x:TypeArguments="x:String">TestData</Literal>
-        </InArgument>
-      </ui:InvokeCode.Arguments>
-    </ui:InvokeCode>
-    <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[TransactionDataAux]" DisplayName="Write Range Workbook - data no loaded" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="TestData" StartingCell="A2" WorkbookPath="C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA_Copia.xlsx" />
+            </Assign.Value>
+          </Assign>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim excelApp As Microsoft.Office.Interop.Excel.Application = Nothing&#xA;Dim workbook As Microsoft.Office.Interop.Excel.Workbook = Nothing&#xA;Dim worksheet As Microsoft.Office.Interop.Excel.Worksheet = Nothing&#xA;Dim usedRange As Microsoft.Office.Interop.Excel.Range = Nothing&#xA;Dim lastRow As Integer&#xA;&#xA;Try&#xA;    ' Inicializar Excel&#xA;    excelApp = New Microsoft.Office.Interop.Excel.Application()&#xA;    excelApp.Visible = False&#xA;    excelApp.DisplayAlerts = False&#xA;&#xA;    ' Abrir el libro&#xA;    workbook = excelApp.Workbooks.Open(in_InitialInpuPath)&#xA;    &#xA;    ' Seleccionar la hoja por nombre&#xA;    worksheet = CType(workbook.Sheets(in_InputSheetName), Microsoft.Office.Interop.Excel.Worksheet)&#xA;&#xA;    ' Obtener la última fila usada&#xA;    usedRange = worksheet.UsedRange&#xA;    lastRow = usedRange.Rows.Count&#xA;&#xA;    ' Si hay más de una fila (es decir, hay datos además del header)&#xA;    If lastRow &gt; 1 Then&#xA;        ' Limpiar desde la fila 2 hasta la última fila usada&#xA;        Dim rangeToClear As Microsoft.Office.Interop.Excel.Range&#xA;        rangeToClear = worksheet.Range(&quot;A2&quot;, worksheet.Cells(lastRow, usedRange.Columns.Count))&#xA;        rangeToClear.Clear()&#xA;        System.Runtime.InteropServices.Marshal.ReleaseComObject(rangeToClear)&#xA;    End If&#xA;&#xA;    ' Guardar y cerrar&#xA;    workbook.Save()&#xA;    workbook.Close()&#xA;&#xA;Catch ex As Exception&#xA;    Throw ex&#xA;&#xA;Finally&#xA;    ' Liberar objetos en orden correcto&#xA;    If Not usedRange Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(usedRange)&#xA;    If Not worksheet Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(worksheet)&#xA;    If Not workbook Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(workbook)&#xA;&#xA;    If Not excelApp Is Nothing Then&#xA;        excelApp.Quit()&#xA;        System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp)&#xA;    End If&#xA;End Try" DisplayName="Invoke Code - clear input sheet" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_InitialInpuPath">
+                <Literal x:TypeArguments="x:String">C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA - copia.xlsx</Literal>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_InputSheetName">
+                <Literal x:TypeArguments="x:String">TestData</Literal>
+              </InArgument>
+            </ui:InvokeCode.Arguments>
+          </ui:InvokeCode>
+          <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[TransactionDataAux]" DisplayName="Write Range Workbook - data no loaded" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="TestData" StartingCell="A2" WorkbookPath="C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA - copia.xlsx" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,248" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim excelApp As Microsoft.Office.Interop.Excel.Application = Nothing&#xA;Dim workbook As Microsoft.Office.Interop.Excel.Workbook = Nothing&#xA;Dim worksheet As Microsoft.Office.Interop.Excel.Worksheet = Nothing&#xA;Dim usedRange As Microsoft.Office.Interop.Excel.Range = Nothing&#xA;Dim lastRow As Integer&#xA;&#xA;Try&#xA;    ' Inicializar Excel&#xA;    excelApp = New Microsoft.Office.Interop.Excel.Application()&#xA;    excelApp.Visible = False&#xA;    excelApp.DisplayAlerts = False&#xA;&#xA;    ' Abrir el libro&#xA;    workbook = excelApp.Workbooks.Open(in_InitialInpuPath)&#xA;    &#xA;    ' Seleccionar la hoja por nombre&#xA;    worksheet = CType(workbook.Sheets(in_InputSheetName), Microsoft.Office.Interop.Excel.Worksheet)&#xA;&#xA;    ' Obtener la última fila usada&#xA;    usedRange = worksheet.UsedRange&#xA;    lastRow = usedRange.Rows.Count&#xA;&#xA;    ' Si hay más de una fila (es decir, hay datos además del header)&#xA;    If lastRow &gt; 1 Then&#xA;        ' Limpiar desde la fila 2 hasta la última fila usada&#xA;        Dim rangeToClear As Microsoft.Office.Interop.Excel.Range&#xA;        rangeToClear = worksheet.Range(&quot;A2&quot;, worksheet.Cells(lastRow, usedRange.Columns.Count))&#xA;        rangeToClear.Clear()&#xA;        System.Runtime.InteropServices.Marshal.ReleaseComObject(rangeToClear)&#xA;    End If&#xA;&#xA;    ' Guardar y cerrar&#xA;    workbook.Save()&#xA;    workbook.Close()&#xA;&#xA;Catch ex As Exception&#xA;    Throw ex&#xA;&#xA;Finally&#xA;    ' Liberar objetos en orden correcto&#xA;    If Not usedRange Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(usedRange)&#xA;    If Not worksheet Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(worksheet)&#xA;    If Not workbook Is Nothing Then System.Runtime.InteropServices.Marshal.ReleaseComObject(workbook)&#xA;&#xA;    If Not excelApp Is Nothing Then&#xA;        excelApp.Quit()&#xA;        System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp)&#xA;    End If&#xA;End Try" DisplayName="Invoke Code - clear input sheet" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_InitialInpuPath">C:\Users\aci-con2\Desktop\Creacion RT MAP\Planos\RT Maps RPA - copia.xlsx</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_InputSheetName">TestData</InArgument>
+            </ui:InvokeCode.Arguments>
+          </ui:InvokeCode>
+        </Sequence>
+      </If.Else>
+    </If>
   </Sequence>
 </Activity>

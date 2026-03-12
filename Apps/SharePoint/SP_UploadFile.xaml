@@ -112,7 +112,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SP_UploadFile" sap:VirtualizedContainerService.HintSize="1165,5011" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SP_UploadFile" sap:VirtualizedContainerService.HintSize="1130,5011" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -330,7 +330,11 @@
                     </uix:NCheckElement.Target>
                   </uix:NCheckElement>
                 </PickBranch.Trigger>
-                <Throw DisplayName="Throw - BE file already loaded" Exception="[New BusinessRuleException(&quot;El archivo &quot;+Path.GetFileName(in_PdfFilePath)+&quot; ya existe en el share point&quot;)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Reemplazar button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="334,162" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="bdc0e54b-e8ae-44f2-939b-5f4f7746e823" ContentHash="UjCxBICbc0i46UbIcP-Qlg" CvElementArea="1481, 545, 108, 35" CvTextArea="1503, 556, 65, 15" CvTextArgument="Reemplazar" CvType="Button" DesignTimeRectangle="1483, 547, 105, 32" ElementType="Button" ElementVisibilityArgument="[UiPath.UIAutomationNext.Enums.NElementVisibility.Visible]" FullSelectorArgument="&lt;webctrl aaname='Reemplazar' parentid='appRoot' tag='BUTTON' data-bind='click: execute' visibleinnertext='Reemplazar' /&gt;" Guid="4139dd85-3a44-493e-9ee0-e085a7745ac7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAkCAYAAACDr7TyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL+SURBVGhD7ZYtk6swFIb3P0WholCoqigUqgoVVYVC8QNQUatQqCpUFQoVVRWFisO/O/mgW9rO3rkzd7ub3mTmmWkhyZ49T85J3xBHcOPt9kEcv39cpC3LEvnlRGkBEqUFSJQWIFFagERpARKlBUiUFiBRWoBEaQESpQXIc6SdBRghICtJhlKMmG/nPZmBExAmcH7w7jfzVGllr6CUguxKpCRFPT6Y+0SitK/w0viwPhvAN99/hijtK24qbWoZCCnRz+79PAqUWWJbZ5KVeJfarZtHiDJDsrbUdwltng8chDA0fYs8Me92aEaFofJz0z26s9vbianxXjNQu88O9Wm+euelqQFVTt16kiArO8hlwVmYWK9au+8QaqiQUxezja2TLmYb2w78UIASBuHj+Jc8VdrlH2cNRi9sUR2KhKG1ojSkEZo1mBaFrkjAWidKyxaMZGimNTEErJ2gtUTLXDJ5r6DnIzgloNVo97diCEN9UtBa4VS7A3PUN9K0xCRndyjOAjkhOGw6gYRgBOlh8PFMkLM7XGeRg5ADBjPvEps/YN/AU6WZduiSb6rOnfb7k2zgGG5Fe2xL9ZW2nmK7B60w+r9nZfDh83PRQW1icWu37VHh2JTIswzUVO9N+x6rFIS1tvrsM3VEU+bIsrU6+ZW076mwladLM99dkjkGfZ/w7RqK6tGPlUfSru6mO2ll/3nqZYvdA2lj7aRM2szb3rnzwJGaNXKNYUSd+kq/xPPi0hY92BaWNROWqUG2tjrTdtQJjTAJn9BkJqk+kaa1NeJhYv4ojTC0k7Z7HHkKktb2kFxLs5/3HeZFQ/Xc3n823rlHedUZHE7qvpvtnj2n/4G0S1ss0KkF6liBUdeSEpqD92c3Tx1RMZMQc9lT5Lx3Yv5W2o6j2qdu/6xE5ytm0x6lQGFjoChE6ytNods/btFSmB8aBIQWEO0rVtoPsr23XoMoLUCitAB5eWmvSJQWIFFagERpARKlBUiUFiBRWoBEaQESpQXInbQ4whlRWoDjA/rVq5rJzol1AAAAAElFTkSuQmCC" InformativeScreenshot="641d7bc00a2180042533b24da7cd0833.png" Reference="vPy7nYopc0-jm1pCYXfcew/p-ppTiA0SU2I37j7Ka7y6w" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Calidad - Documentos_RT_MAP - Todos los documentos' /&gt;" SearchSteps="Selector, Image, CV" Version="V6" WaitForReadyArgument="Complete" />
+                  </uix:NClick.Target>
+                </uix:NClick>
               </PickBranch>
             </Pick>
           </Sequence>

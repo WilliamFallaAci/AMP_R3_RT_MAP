@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.180.0",
-  "projectVersion": "1.0.4",
+  "projectVersion": "1.0.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -41,7 +41,14 @@
     },
     "processOptions": {
       "ignoredFiles": [
-        "Tests/Test.xaml"
+        "Tests/Test.xaml",
+        "Tests/Apps/SAP/TestCase_SAP_AddRxFilters.xaml",
+        "Tests/Apps/SAP/TestCase_SAP_EnterTransaction.xaml",
+        "Tests/Apps/SAP/TestCase_SAP_FilterGridResults.xaml",
+        "Tests/Apps/SAP/TestCase_SAP_Login.xaml",
+        "Tests/Apps/SAP/TestCase_SAP_PrintRtMap.xaml",
+        "Tests/Apps/SharePoint/TestCase_SP_Login.xaml",
+        "Tests/Apps/SharePoint/TestCase_SP_UploadFile.xaml"
       ]
     },
     "fileInfoCollection": [],
