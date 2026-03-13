@@ -112,13 +112,89 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SP_UploadFile" sap:VirtualizedContainerService.HintSize="1130,5011" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SP_UploadFile" sap:VirtualizedContainerService.HintSize="1130,5475" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="PedidoVenta" />
+      <Variable x:TypeArguments="x:String" Name="PosicionPV" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message - start" sap:VirtualizedContainerService.HintSize="1130,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Inicia cargar PDF en Share Point&quot;]" />
+    <Assign DisplayName="Assign TransactionItem to PedidoVenta" sap:VirtualizedContainerService.HintSize="1130,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[PedidoVenta]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[TransactionItem("Columna1").ToString.Trim]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="Pad PedidoVenta with zeros" sap:VirtualizedContainerService.HintSize="1130,57" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1" MaxIterations="20">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign TransactionItem to PedidoVenta" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[PedidoVenta]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">["0"+PedidoVenta]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="PedidoVenta.Length &lt; 10" />
+      </ui:InterruptibleWhile.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InterruptibleWhile>
+    <Assign DisplayName="Assign Transaction Item To Posicion PV" sap:VirtualizedContainerService.HintSize="1130,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[PosicionPV]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[TransactionItem("Columna2").ToString.Trim]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="Pad PosicionPV with zeros" sap:VirtualizedContainerService.HintSize="1130,57" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2" MaxIterations="20">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign TransactionItem to Posicion PV" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[PosicionPV]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">["0"+PosicionPV]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="PosicionPV.Length &lt; 6" />
+      </ui:InterruptibleWhile.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InterruptibleWhile>
     <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Calidad - Documentos_RT_MAP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1130,4647" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -225,7 +301,7 @@
                               <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="4189e688-e858-4695-b18f-55f41f30e68b" ContentHash="tgy3xP_BVUOdc3181_G7zQ" CvTextArea="1834, 592, 60, 12" CvTextArgument="Editar todo" CvType="Text" DesignTimeRectangle="1834, 585, 59, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='spo-Properties-sectionHeader' tag='A' data-bind='click: onEditClick, clickBubble: *, text: clientFormEditLink' visibleinnertext='Editar todo' /&gt;" Guid="5bc5937f-2d63-4d7c-9e6d-e02e5bbea925" InformativeScreenshot="1b44b5d47023f55676a1ad81df92974c.png" Reference="vPy7nYopc0-jm1pCYXfcew/JDtLaPLKmk2xTUjORN6wsA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Complete" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - pedido venta ampo" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[TransactionItem(&quot;Columna1&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - pedido venta ampo" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[PedidoVenta]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="323bfc78-5b66-4cb2-bff8-32811a24b5f5" ContentHash="VfuJZLqWG0GYh6fcOUmAtQ" DesignTimeRectangle="1328, 646, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='PedidoVentaAmpo' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="f6dc3424-1b77-4174-9b5b-040889a0cce6" InformativeScreenshot="f79b24971d68d275550cef2ac0a2b092.png" Reference="vPy7nYopc0-jm1pCYXfcew/0sqB5amhkkGWaok1_GjPbg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                             </uix:NTypeInto.Target>
@@ -261,7 +337,7 @@
                       </ActivityFunc>
                     </ui:RetryScope.Condition>
                   </ui:RetryScope>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into - pedido PV ampo" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[TransactionItem(&quot;Columna2&quot;).ToString.Trim]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type into posicion PV ampo." EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="0f829b9d-0637-4ed1-baed-695fcd0b88eb" Text="[PosicionPV]" Timeout="[CDbl(Config(&quot;SP_TimeoutMedium&quot;))]" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="documentationlibrary.ampo.com/cal/Documentos_RT_MAP/Forms/AllItems.aspx" CVScreenId="66a39372-edae-4668-b728-83b44a9b0b34" ContentHash="CB51oFtT9UmpL5L8qEZR0g" DesignTimeRectangle="1328, 727, 542, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='PosicionPVAmpo' parentid='appRoot' tag='INPUT' type='text' class='od-TextEditor-input od-TextField-field' /&gt;" Guid="1673c524-f267-4cb9-9fe3-c708bdb34c63" InformativeScreenshot="f02c932d2f564cf6cc727557a7ea930c.png" Reference="vPy7nYopc0-jm1pCYXfcew/Q0B4_oG08UCMTW5pSkWHGw" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Editar elemento' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                     </uix:NTypeInto.Target>
